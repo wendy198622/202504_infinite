@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>愛無限公益慈善發展協會</title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="Resource-type" content="" />
+    <link rel="icon" href="logo.ico">
+    <!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/charity.css" />
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/pagination.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body>
+	
+	<header id="header"></header>
+
+    <section>
+        <div class="charitypage_top">
+            <div class="container">
+                <h4>標題：愛無限公益慈善發展協會愛無限公益慈善發展協會</h4>
+                <div class="content_intro">
+                    <div class="intro_photo">
+                        <img class="photo" src="img/charitypage-topimg.png" alt="">
+                    </div>
+                    <div class="intro_desc">
+                        <div class="desc">   
+                            <p>協會的成立源於一份善心和愛的理念，這也是延續愛無限社會企業一直以來所堅持的價值觀：「在別人的需要上，看見自己的責任」。這份價值觀鼓勵我們將關懷和關注投向在公益慈善上，以慈愛的心對待他人，以善行回饋社會，讓愛和善良成為社會的主旋律，讓社會因我們的付出而變得更美好。</p>
+                            <div class="share">
+                                <div class="item">
+                                    <span class="material-icons">share</span>Facebook
+                                </div>
+                                <div class="item">
+                                    <span class="material-icons">share</span>Line
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="material-icons">paid</span>幫助支持
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="material-icons">person</span>參與志工
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="material-icons">image</span>活動相簿
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="charitypage_content">
+            <div class="container">
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+</body>
+<script>
+
+    $(document).ready(function () {
+        new WOW().init();
+
+        $('#header').load('page/header.html');
+        $('#footer').load('page/footer.html');
+    })
+
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+
+    jQuery(document).ready(function () {
+
+        var show_per_page = 6; 
+
+        var number_of_items = $('#pagingBox').children().size();
+
+        var number_of_pages = Math.ceil(number_of_items/show_per_page);
+
+        $('#current_page').val(0);
+        $('#show_per_page').val(show_per_page);
+        var navigation_html = '<div class="previous_link"><a href="javascript:previous();"><span class="material-icons">chevron_left</span></a></div>';
+        var current_link = 0;
+        while(number_of_pages > current_link){
+            navigation_html += '<div class="page_link" longdesc="' + current_link +'"><a href="javascript:go_to_page(' + current_link +')" >'+ (current_link + 1) +'</a></div>';
+            current_link++;
+        }
+        navigation_html += '<div class="next_link"><a href="javascript:next();"><span class="material-icons">chevron_right</span></a></div>';
+
+        $('#page_navigation').html(navigation_html);
+
+        $('#page_navigation .page_link:first').addClass('active_page');
+
+        $('#pagingBox').children().css('display', 'none');
+
+        $('#pagingBox').children().slice(0, show_per_page).css('display', 'block');
+
+    });
+
+
+    //Pagination JS
+
+    function previous(){
+
+        new_page = parseInt($('#current_page').val()) - 1;
+        if($('.active_page').prev('.page_link').length==true){
+        go_to_page(new_page);
+        }
+
+    }
+
+    function next(){
+        new_page = parseInt($('#current_page').val()) + 1;
+        if($('.active_page').next('.page_link').length==true){
+            go_to_page(new_page);
+        }
+
+    }
+    function go_to_page(page_num){
+
+        var show_per_page = parseInt($('#show_per_page').val());
+
+        start_from = page_num * show_per_page;
+
+        end_on = start_from + show_per_page;
+
+        $('#pagingBox').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
+
+        $('.page_link[longdesc=' + page_num + ']').addClass('active_page').siblings('.active_page').removeClass('active_page');
+
+        $('#current_page').val(page_num);
+    }
+
+</script>
+
+</html>

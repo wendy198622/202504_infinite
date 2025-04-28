@@ -1,0 +1,116 @@
+
+<div class="logo">
+    <a href="index.html">
+        <img src="./img/logo.svg" alt="愛無限公益慈善發展協會">
+    </a>
+</div>
+
+
+<nav>
+
+    <button id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="nav_box">
+        <ul class="nav_primary">
+            <li>
+                <a href="javascript:void(0);" class="nav_title">愛關於
+                    <span class="material-icons">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="nav_secondery">
+                    <li><a href="AboutFounder.html">創辦人的故事</a</li>
+                    <li><a href="AboutAssociation.html">協會介紹</a></li>
+                    <li><a href="Volunteers.html">志工分享</a></li>
+                    <li><a href="Entrepreneurs'Voices.html">企業家之聲</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="nav_title">愛公益
+                    <span class="material-icons">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="nav_secondery">
+                    <li><a href="VisionSupport.html">視障區</a</li>
+                    <li><a href="MobilitySupport.html">身障區</a></li>
+                    <li><a href="HearingSupport.html">聽障區</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="nav_title">愛付出
+                    <span class="material-icons">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="nav_secondery">
+                    <li><a href="JoinUs.html">加入會員</a</li>
+                    <li><a href="Partners.html">愛心夥伴</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="nav_title">愛分享
+                    <span class="material-icons">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="nav_secondery">
+                    <li><a href="FAQ.html">常見問題</a</li>
+                    <li><a href="ContactUs.html">聯絡我們</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="nav_title">愛支持
+                    <span class="material-icons">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="nav_secondery">
+                    <li><a href="Donation.html">我想捐款</a</li>
+                    <li><a href=".html"></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Sponsor.html" class="nav_title gradient-text gradient-button">捐款</a>
+                <!-- <button class="gradient-button gradient-text">點我支持</button> -->
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<Script>
+    $(document).ready(function () {
+
+        if ($(window).width() > 960) {
+            $('.nav_primary > li').hover(
+                function() {
+                    $(this).find('.nav_secondery').stop(true, true).slideDown(200);
+                },
+                function() {
+                    $(this).find('.nav_secondery').stop(true, true).slideUp(200);
+                }
+            );
+        }
+        
+        $("#menu-toggle").click(function() {
+            $(".nav_box").toggleClass("open");
+        });
+
+        $('.nav_secondery li').hover(
+            function() {
+            // 滑入時，所有 a 加上 gradient-text
+            $(this).find('a').addClass('gradient-text');
+            },
+            function() {
+            // 滑出時，移除 gradient-text
+            $(this).find('a').removeClass('gradient-text');
+            }
+        );
+
+    });
+</Script>

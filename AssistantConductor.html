@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>台東回響樂團</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/aboutus.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<!-- <script src="js/slick.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<!-- 0617新增 -->
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	
+	<!-- 0617修改 -->
+	<header id="header"></header>
+
+	<section>
+		<div class="topic aboutus_topic">
+            <h2>About Us</h2>
+            <h1>關於回響</h1>
+		</div>
+		<div class="aboutus_info">
+			<div class="container">
+				<div class="info_title">
+                    助理指揮
+					<!-- <span>taitung echo orchestra</span> -->
+				</div>
+				<div class="info_content">
+                    <img class="position" src="img/aboutus-AssistantConductor.jpg" alt="">
+                    <h3>王于如</h3>
+                    <h4>國立臺東大學指揮碩士。<br>
+                            德國 Rostock 音樂暨戲劇學院法國號演奏學士及碩士。</h4>
+                    <p>台東人，從小學習鋼琴及法國號，鋼琴師事吳秋美、周美君及陳芝羽老師。畢業於台東大學附小、新生國中音樂班，就讀台東女中時曾獲全國音樂比賽法國號高中組特優第一名，並考取國立台北藝術大學音樂系。法國號師事蕭崇傑、蘇怡馨、陳彥豪及 Alex Goncalves 老師。</p>
+                    <p>高中畢業後赴德求學，跟隨Bodo Werner、Ignacio Garcia 及Stephan Katte學習法國號和自然號。留學時期多次與Rostock大學樂團巡迴演出，2014與Junges Tonkuenstler Orchestra於德國和列支敦士登巡迴演出，2015年於波蘭Gdansk與該校樂團共同錄製CD，指揮Sigiwald Kuijken。亦曾多次於德國施特拉爾松德歌劇院(Theater Vorpommern)、柏林Orpheus Ensemble、施威林歌劇院 (Mecklenburgisches Staatstheater)、德意志電影管弦樂團(Deutsches Filmorchester Babelsberg)等樂團擔任協演人員。2017 年考取 Rostock 青年九重奏 (Junges Rostocker Nonett)團員，並於 2019 年錄取進入德國青年愛樂管弦樂團 (Junge Deutsche Philharmonie)擔任低音法國號演奏員。</p>
+                    <p>回台後曾多次於國家交響樂團於《歡暢大地—準．馬寇爾與NSO》、《詩琴蕭邦》等音樂會擔任協演人員，亦曾受邀於台北市立交響樂團、長榮交響樂團、灣聲樂團擔任協演人員。2022年參與台中歌劇院巨人系列《唐懷瑟》歌劇演出。</p>
+                    <p>2023年取得國立台東大學音樂系指揮碩士學位，師事郭聯昌教授。曾多次與台東回響樂團合作，指揮演出《2022聖誕音樂會》、《台灣四季》，並擔任團練指揮及莫札特歌劇《費加洛婚禮》助理指揮。</p>
+                    <p>現擔任台東高商管樂團分部老師、台東回響樂團法國號首席及助理指揮。</p>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <div class="popup popup_send">
+		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
+	</div> -->
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		
+		new WOW().init();
+
+		$(".imgLiquidFill").imgLiquid({fill:true});
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+				// $(".logo").fadeIn(200);
+			} else {
+				$("#header").removeClass("fixed");
+				// $(".logo").fadeOut(0);
+			}
+		});
+
+		// 點擊 #menu-toggle 切換 .nav_box
+		$("#menu-toggle").on("click", function() {
+			$(".nav_box").toggle();
+		});
+		
+		var mySwiper = new Swiper ('.swiper-container', {
+			slidesPerView: 3,
+      		spaceBetween: 30,
+			autoHeight: true,
+			pagination: {
+				el: '.swiper-pagination',
+        		clickable: true,
+				type: 'bullets',
+					// 	clickable: true,
+					// renderBullet: function (index, className) {
+					// return '<span class="' + className + '">' + (menu[index]) + '</span>';
+					// },
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		})
+	})
+
+
+</script>
+</html>

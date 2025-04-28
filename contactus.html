@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>台東回響樂團</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<!-- <script src="js/slick.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+
+	<section>
+        <div class="topic contactus_topic">
+            <h2>contactus</h2>
+            <h1>演出接洽</h1>
+        </div>
+        <div class="theme theme_contact">
+            <div class="form container">
+                <!-- <div class="title">預約賞屋</div> -->
+                <div class="subtitle">歡迎蒞臨我們的網站！<br>
+                        若您對我們的樂團演出有興趣，或希望進一步了解合作細節，請隨時與我們聯繫。<br>
+                        我們期待您的來信，並將盡快回覆，與您一同打造難忘的音樂時刻！</div>
+                <!-- <div class="item wow fadeInUp" data-wow-delay=".3s">
+                    <select>
+                        <option>* 請選擇建案</option>
+                        <option>AAA</option>
+                        <option>BBB</option>
+                        <option>CCC</option>
+                    </select>
+                </div> -->
+                <div class="item wow fadeInUp" data-wow-delay=".6s">
+                    <input type="text" v-model="name" name="name" placeholder="* 姓名" required />
+                </div>
+                <div class="item wow fadeInUp" data-wow-delay=".9s">
+                    <input type="text" v-model="phone" name="phone" placeholder="* 連絡電話" required />
+                </div>
+                <div class="item wow fadeInUp" data-wow-delay="1.2s">
+                    <select>
+                        <option>聯絡時段</option>
+                        <option>8:00-12:00</option>
+                        <option>12:00-17:00</option>
+                        <option>17:00-22:00</option>
+                    </select>
+                </div>
+                <div class="item wow fadeInUp" data-wow-delay="1.5s">
+                    <!-- <label for="email">E-mail <span>*</span></label> -->
+                    <input type="text" v-model="email" name="email" placeholder="* E-mail" required />
+                </div>
+                <div class="item full wow fadeInUp" data-wow-delay="1.8s">
+                    <!-- <label for="message">留言</label> -->
+                    <textarea id="message" v-model="message" name="message" placeholder="留言" required></textarea>
+                </div>
+                <div class="item full no-bg wow fadeInUp" data-wow-delay="2.1s">
+                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" checked>
+                    <label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="privacy.html" target="_blank">隱私權政策規範</a></label>
+                </div>
+                <button class="send wow fadeInUp" data-wow-delay="2.5s">送出</button>
+            </div>
+        </div>
+	</section>
+
+	<div class="popup popup_send">
+		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
+    </div>
+
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+        $(document).ready(function () {
+            
+            new WOW().init();
+    
+            $(".imgLiquidFill").imgLiquid({fill:true});
+    
+            $('#header').load('page/header.html');
+            $('#footer').load('page/footer.html');
+    
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop() > 100) {
+                    $("#header").addClass("fixed");
+                    // $(".logo").fadeIn(200);
+                } else {
+                    $("#header").removeClass("fixed");
+                    // $(".logo").fadeOut(0);
+                }
+            });
+    
+            // 點擊 #menu-toggle 切換 .nav_box
+            $("#menu-toggle").on("click", function() {
+                $(".nav_box").toggle();
+            });
+            
+            var mySwiper = new Swiper ('.swiper-container', {
+                slidesPerView: 3,
+                  spaceBetween: 30,
+                autoHeight: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    type: 'bullets',
+                        // 	clickable: true,
+                        // renderBullet: function (index, className) {
+                        // return '<span class="' + className + '">' + (menu[index]) + '</span>';
+                        // },
+                },
+    
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            })
+        })
+
+
+</script>
+</html>

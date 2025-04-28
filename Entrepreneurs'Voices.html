@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>愛無限公益慈善發展協會</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/about.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	
+	<header id="header"></header>
+
+	<section>
+		<div class="topic about_topic">
+            <h1>愛關於</h1>
+		</div>
+		<div class="about_content">
+			<div class="container">
+				<div class="content_title">
+					<span class="gradient-text">Voices of Entrepreneurs</span>
+					<h3>企業家之聲</h3>
+				</div>
+				<div class="content_entrepreneur">
+					<div class="entrepreneur_story swiper swiper-container-story">
+						<ul class="swiper-wrapper">
+							<!-- Slides -->
+							<li class="swiper-slide">
+								<div class="photo">
+									<img src="img/volunteer_story-img.png" alt="">
+								</div>
+								<h4>企業家 XXX111</h4>
+								<p>當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+							</li>
+							<li class="swiper-slide">
+								<div class="photo">
+									<img src="img/volunteer_story-img.png" alt="">
+								</div>
+								<h4>企業家 XXX222</h4>
+								<p>當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+							</li>
+							<li class="swiper-slide">
+								<div class="photo">
+									<img src="img/volunteer_story-img.png" alt="">
+								</div>
+								<h4>企業家 XXX333</h4>
+								<p>當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+							</li>
+							<li class="swiper-slide">
+								<div class="photo">
+									<img src="img/volunteer_story-img.png" alt="">
+								</div>
+								<h4>企業家 XXX444</h4>
+								<p>當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+                </div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		
+		new WOW().init();
+
+		$(".imgLiquidFill").imgLiquid({fill:true});
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+			} else {
+				$("#header").removeClass("fixed");
+			}
+		});
+
+		// 點擊 #menu-toggle 切換 .nav_box
+		$("#menu-toggle").on("click", function() {
+			$(".nav_box").toggle();
+		});
+		
+		var mySwiper = new Swiper ('.swiper-container-story', {
+			slidesPerView: 3,
+      		spaceBetween: 40,
+			autoHeight: true,
+			autoplay: {
+				delay: 5000,  // 設定間隔時間 (毫秒)
+				disableOnInteraction: false, // 使用者操作後仍繼續自動播放
+			},
+			loop: true, // 讓輪播可以無限循環
+			pagination: {
+				el: '.swiper-pagination',  // 告訴Swiper要把小圓點放在哪個元素
+				clickable: true,            // 讓使用者可以點小圓點切換
+			},
+		})
+	})
+
+
+</script>
+</html>
