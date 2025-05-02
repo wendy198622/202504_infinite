@@ -758,4 +758,284 @@ footer .copyright {
   justify-content: center;
   gap: 40px;
   margin-top: 40px;
+}
+
+.application_content {
+  padding: 80px 0;
+}
+.application_content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.application_content .content_title {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.application_content .content_title img {
+  width: 80px;
+}
+.application_content .content_title h3 {
+  margin-top: 20px;
+}
+.application_content .content_faq {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.application_content .content_faq h5 {
+  position: relative;
+  padding-left: 54px;
+}
+.application_content .content_faq h5:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  background: url(../img/bg-circle.svg) left bottom no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+  left: -14px;
+  top: -16px;
+}
+.application_content .content_faq h5:after {
+  content: "Ｑ：";
+  width: 64px;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: -12px;
+  padding: 12px 0 12px 4px;
+}
+.application_content .content_faq p {
+  position: relative;
+  margin-left: 54px;
+  background: #F4F5F6;
+  margin-top: 12px;
+  padding: 20px;
+  border-radius: 16px;
+}
+.application_content .content_faq .info_photo {
+  position: relative;
+}
+.application_content .content_faq .info_photo .name {
+  width: 42%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.application_content .content_faq .info_feature ul {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.application_content .content_faq .info_feature ul li {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-family: "Noto Sans TC", sans-serif;
+  justify-content: space-between;
+  padding: 12px 0 12px 54px;
+  position: relative;
+}
+.application_content .content_faq .info_feature ul li:before {
+  content: "";
+  background: url(../img/icon-Founder.svg) center center no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.application_content .content_faq .info_feature ul li:nth-child(1) {
+  margin-left: 0;
+}
+.application_content .content_faq .info_feature ul li:nth-child(2) {
+  margin-left: 42px;
+}
+.application_content .content_faq .info_feature ul li:nth-child(3) {
+  margin-left: 64px;
+}
+.application_content .content_faq .info_feature ul li:nth-child(4) {
+  margin-left: 32px;
+}
+.application_content .content_faq .info_feature ul li + li {
+  margin-top: 12px;
+}
+.application_content .content_form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.application_content .content_form input[type=radio] {
+  display: none;
+}
+.application_content .content_form label.tab-option {
+  padding: 6px 32px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 32px;
+  margin: 10px 12px 0;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+}
+.application_content .content_form label.tab-option::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(170deg, #E7275A, #F8B01E);
+  position: absolute;
+  z-index: -1;
+  top: -2px;
+  left: -2px;
+  border-radius: 32px;
+  padding: 2px;
+}
+.application_content .content_form label.tab-option:hover {
+  cursor: pointer;
+}
+.application_content .content_form #tab-option1:checked ~ .tab-option1,
+.application_content .content_form #tab-option2:checked ~ .tab-option2 {
+  background: linear-gradient(170deg, #E7275A, #F8B01E);
+  color: #fff;
+}
+.application_content .content_form .tab-content {
+  display: none;
+}
+.application_content .content_form #tab-option1:checked ~ .tab-content1,
+.application_content .content_form #tab-option2:checked ~ .tab-content2 {
+  display: block;
+}
+.application_content .content_form .tab-content {
+  width: 100%;
+  margin-top: 60px;
+}
+@media (max-width: 1480px) {
+  .application_content .content_form .tab-content {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 800px) {
+  .application_content .content_form .tab-content {
+    padding: 0 20px;
+  }
+}
+.application_content .content_form .tab-content .inquiry-form, .application_content .content_form .tab-content .cooperate-form {
+  background: #f4f5f6;
+  padding: 40px;
+  border-radius: 20px;
+}
+.application_content .content_form .tab-content .inquiry-form label, .application_content .content_form .tab-content .cooperate-form label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.application_content .content_form .tab-content .inquiry-form label span, .application_content .content_form .tab-content .cooperate-form label span {
+  color: red;
+}
+.application_content .content_form .tab-content .inquiry-form label span.note, .application_content .content_form .tab-content .cooperate-form label span.note {
+  display: flex;
+  font-size: 12px;
+  color: #717171;
+}
+.application_content .content_form .tab-content .inquiry-form input[type=text],
+.application_content .content_form .tab-content .inquiry-form input[type=tel],
+.application_content .content_form .tab-content .inquiry-form input[type=email],
+.application_content .content_form .tab-content .inquiry-form input[type=date],
+.application_content .content_form .tab-content .inquiry-form input[type=department],
+.application_content .content_form .tab-content .inquiry-form input[type=position],
+.application_content .content_form .tab-content .inquiry-form input[type=address],
+.application_content .content_form .tab-content .inquiry-form input[type=phone],
+.application_content .content_form .tab-content .inquiry-form input[type=fax],
+.application_content .content_form .tab-content .inquiry-form select,
+.application_content .content_form .tab-content .inquiry-form textarea, .application_content .content_form .tab-content .cooperate-form input[type=text],
+.application_content .content_form .tab-content .cooperate-form input[type=tel],
+.application_content .content_form .tab-content .cooperate-form input[type=email],
+.application_content .content_form .tab-content .cooperate-form input[type=date],
+.application_content .content_form .tab-content .cooperate-form input[type=department],
+.application_content .content_form .tab-content .cooperate-form input[type=position],
+.application_content .content_form .tab-content .cooperate-form input[type=address],
+.application_content .content_form .tab-content .cooperate-form input[type=phone],
+.application_content .content_form .tab-content .cooperate-form input[type=fax],
+.application_content .content_form .tab-content .cooperate-form select,
+.application_content .content_form .tab-content .cooperate-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.application_content .content_form .tab-content .inquiry-form input[type=radio], .application_content .content_form .tab-content .inquiry-form input[type=checkbox], .application_content .content_form .tab-content .cooperate-form input[type=radio], .application_content .content_form .tab-content .cooperate-form input[type=checkbox] {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+.application_content .content_form .tab-content .inquiry-form input[type=radio]:checked, .application_content .content_form .tab-content .inquiry-form input[type=checkbox]:checked, .application_content .content_form .tab-content .cooperate-form input[type=radio]:checked, .application_content .content_form .tab-content .cooperate-form input[type=checkbox]:checked {
+  background: url(../img/check.svg) center center no-repeat;
+  background-size: contain;
+}
+.application_content .content_form .tab-content .inquiry-form textarea, .application_content .content_form .tab-content .cooperate-form textarea {
+  resize: vertical;
+}
+.application_content .content_form .tab-content .inquiry-form ::-moz-placeholder, .application_content .content_form .tab-content .cooperate-form ::-moz-placeholder {
+  color: #a8a8a8;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.application_content .content_form .tab-content .inquiry-form ::placeholder, .application_content .content_form .tab-content .cooperate-form ::placeholder {
+  color: #a8a8a8;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.application_content .content_form .tab-content .inquiry-form .form-row, .application_content .content_form .tab-content .cooperate-form .form-row {
+  margin-bottom: 20px;
+}
+.application_content .content_form .tab-content .inquiry-form .two-cols, .application_content .content_form .tab-content .cooperate-form .two-cols {
+  display: flex;
+  gap: 20px;
+}
+.application_content .content_form .tab-content .inquiry-form .two-cols > div, .application_content .content_form .tab-content .cooperate-form .two-cols > div {
+  flex: 1;
+}
+.application_content .content_form .tab-content .inquiry-form .three-cols, .application_content .content_form .tab-content .cooperate-form .three-cols {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.application_content .content_form .tab-content .inquiry-form .three-cols > select, .application_content .content_form .tab-content .inquiry-form .three-cols > div, .application_content .content_form .tab-content .cooperate-form .three-cols > select, .application_content .content_form .tab-content .cooperate-form .three-cols > div {
+  width: 30%;
+}
+.application_content .content_form .tab-content .inquiry-form .three-cols input, .application_content .content_form .tab-content .cooperate-form .three-cols input {
+  flex: 1;
+}
+.application_content .content_form .tab-content .inquiry-form button, .application_content .content_form .tab-content .cooperate-form button {
+  background: linear-gradient(170deg, #E7275A, #F8B01E);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 32px;
+}
+.application_content .content_form .tab-content .inquiry-form button:hover, .application_content .content_form .tab-content .cooperate-form button:hover {
+  opacity: 0.85;
 }/*# sourceMappingURL=give.css.map */

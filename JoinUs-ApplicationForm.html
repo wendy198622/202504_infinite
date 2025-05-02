@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>愛無限公益慈善發展協會</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/give.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	
+	<header id="header"></header>
+
+	<section>
+		<div class="application_content">
+			<div class="container">
+				<div class="content_form">                   
+					<input type="radio" name="smart-tab" id="tab-option1">
+					<label for="tab-option1" class="tab-option tab-option1">個人會員</label>
+
+					<input type="radio" name="smart-tab" id="tab-option2" checked>
+					<label for="tab-option2" class="tab-option tab-option2">團體會員</label>
+
+					<div class="tab-content tab-content1">
+						<form class="inquiry-form">
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>登入帳號 <span>*</span></label>
+									<input type="text" placeholder="請填寫正確 Email，以作為登入帳號">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>登入密碼 <span>*</span></label>
+									<input type="text" placeholder="密碼格式請輸入 8-12 碼，包含大小寫英文及數字">
+								</div>
+								<div>
+									<label>密碼確認 <span>*</span></label>
+									<input type="text" placeholder="請再次輸入密碼">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>申請人姓名 <span>* 中文姓名一經註冊完畢，即無法修改</span></label>
+									<input type="text" placeholder="請填寫您的真實姓名">
+								</div>
+								<div>
+									<label>性別 <span>*</span></label>
+									<select required>
+										<option value="" disabled selected hidden>請選擇</option>
+										<option value="">男性</option>
+										<option value="">女性</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>出生年月日 <span>*</span></label>
+									<input type="date" required>
+								</div>
+								<div>
+									<label>身份證字號 / 居留證號 <span>*</span></label>
+									<input type="text" placeholder="請填寫您的真實身分證字號 / 居留證號" required>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>職業</label>
+									<select>
+										<option value="" disabled selected hidden>請選擇</option>
+										<option value="student">學生</option>
+										<option value="public_servant">公務人員</option>
+										<option value="teacher">教師</option>
+										<option value="medical_staff">醫療人員</option>
+										<option value="engineer">工程師／資訊從業者</option>
+										<option value="business">企業員工／業務人員</option>
+										<option value="finance">金融／保險業</option>
+										<option value="service">服務業</option>
+										<option value="freelancer">自由工作者</option>
+										<option value="arts">藝術／設計／創作</option>
+										<option value="law">法律／政治相關</option>
+										<option value="media">媒體／公關／廣告</option>
+										<option value="retired">退休人士</option>
+										<option value="homemaker">家庭主婦／夫</option>
+										<option value="unemployed">待業中</option>
+										<option value="other">其他</option>
+									</select>
+								</div>
+								<div>
+									<label>最高學歷</label>
+									<select>
+										<option value="" disabled selected hidden>請選擇</option>
+										<option value="elementary">小學</option>
+										<option value="junior_high">國中</option>
+										<option value="senior_high">高中／高職</option>
+										<option value="associate">專科</option>
+										<option value="bachelor">大學／學士</option>
+										<option value="master">碩士</option>
+										<option value="doctorate">博士</option>
+										<option value="other">其他</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<label>聯絡地址 <span>*</span></label>
+								<div class="three-cols">
+									<!-- 縣市選單 -->
+									<select id="city" name="city" required>
+										<option value="" disabled selected hidden>請選擇縣市</option>
+									</select>
+									<!-- 鄉鎮市區選單 -->
+									<select id="district" name="district" required>
+										<option value="" disabled selected hidden>請先選擇縣市</option>
+									</select>
+									<input type="text" placeholder="請填寫路名 / 街 / 號 / 樓">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>出生年月日 <span>*</span></label>
+									<input type="date" required>
+								</div>
+								<div>
+									<label>身份證字號 / 居留證號 <span>*</span></label>
+									<input type="text" placeholder="請填寫您的真實身分證字號 / 居留證號" required>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>手機號碼 <span>*</span></label>
+									<input type="phone" placeholder="0910123456" required>
+								</div>
+								<div>
+									<label>室內電話</label>
+									<input type="tel" placeholder="02-00000000#123" required>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>傳真號碼 <span>*</span></label>
+									<input type="fax" placeholder="02-00000000" required>
+								</div>
+								<div>
+									<label>電子信箱</label>
+									<input type="email" placeholder="example@loveinfinite.com">
+								</div>
+							</div>
+
+							<div class="form-row two-cols"> 
+								<label><strong>收據寄送方式<span style="color:red;">＊</span></strong></label><br>
+								<label><input type="radio" name="donation_type" value="single"> 電子收據</label>
+							  </div>
+							
+							<div class="form-row two-cols">
+								<label><strong>授權本會將捐款明細上傳國稅局<span class="note" style="color:red;"> (備註:此欄位為若有額外捐款者需填寫，以利您綜合所得稅申報快速完成)</span></strong></label><br>
+								<label><input type="radio" name="payment_method" value="yes"> 同意</label>
+								<label><input type="radio" name="payment_method" value="no"> 不同意</label>                        
+							</div>
+                        
+							<div class="form-row two-cols">
+								<label><input type="radio" name="anonymous" value="no"> 我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</label> 
+							</div>
+                        
+							<div class="form-row two-cols">
+								<label><input type="radio" name="anonymous" value="no"> 我同意會員（會員代表）有表決權、選舉權、被選舉權與罷免權。每一會員（會員代表）為一權。</label> 
+							</div>
+
+							<button type="submit">確認送出</button>
+						</form>							  
+					</div>
+					<div class="tab-content tab-content2">
+						<form class="inquiry-form">
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>登入帳號 <span>*</span></label>
+									<input type="text" placeholder="請填寫正確 Email，以作為登入帳號">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>登入密碼 <span>*</span></label>
+									<input type="text" placeholder="密碼格式請輸入 8-12 碼，包含大小寫英文及數字">
+								</div>
+								<div>
+									<label>密碼確認 <span>*</span></label>
+									<input type="text" placeholder="請再次輸入密碼">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>團體/公司/商業名稱 <span>* 中文姓名一經註冊完畢，即無法修改</span></label>
+									<input type="text" placeholder="愛無限股份有限公司">
+								</div>
+								<div>
+									<label>成立日期 <span>*</span></label>
+									<input type="date" required>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>發證單位 <span>* </span></label>
+									<input type="text" placeholder="">
+								</div>
+								<div>
+									<label>團體立案/公司登記/商業登記字號 <span>* </span></label>
+									<input type="text" placeholder="">
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<label>聯絡地址 <span>*</span></label>
+								<div class="three-cols">
+									<!-- 縣市選單 -->
+									<select id="city" name="city" required>
+										<option value="" disabled selected hidden>請選擇縣市</option>
+									</select>
+									<!-- 鄉鎮市區選單 -->
+									<select id="district" name="district" required>
+										<option value="" disabled selected hidden>請先選擇縣市</option>
+									</select>
+									<input type="text" placeholder="請填寫路名 / 街 / 號 / 樓">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>負責人姓名 <span>*</span></label>
+									<input type="text" placeholder="" required>
+								</div>
+								<div>
+									<label>負責人電話</label>
+									<input type="tel" placeholder="02-00000000#123" required>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>室內電話</label>
+									<input type="tel" placeholder="02-00000000#123" required>
+								</div>
+								<div>
+									<label>手機號碼 <span>*</span></label>
+									<input type="phone" placeholder="0910123456" required>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>傳真號碼 <span>*</span></label>
+									<input type="fax" placeholder="02-00000000" required>
+								</div>
+								<div>
+									<label>電子信箱</label>
+									<input type="email" placeholder="example@loveinfinite.com">
+								</div>
+							</div>
+
+							<div class="form-row two-cols"> 
+								<label><strong>收據寄送方式<span style="color:red;">＊</span></strong></label><br>
+								<label><input type="radio" name="donation_type" value="single"> 電子收據</label>
+							  </div>
+							
+							
+							  <div class="form-row two-cols">
+								<div>
+									<label>團體會員推(選)派代表</label>
+								</div>
+							</div>
+							
+							<div class="form-row three-cols">
+								<div>
+									<label>姓名 <span>*</span></label>
+									<input type="text" placeholder="請填寫您的真實名字" required>
+								</div>
+								<div>
+									<label>職稱</label>
+									<input type="position" placeholder="">
+								</div>
+								<div>
+									<label>性別 <span>*</span></label>
+									<select required>
+										<option value="" disabled selected hidden>請選擇</option>
+										<option value="">男性</option>
+										<option value="">女性</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>出生年月日 <span>*</span></label>
+									<input type="date" required>
+								</div>
+								<div>
+									<label>身份證字號 / 居留證號 <span>*</span></label>
+									<input type="text" placeholder="請填寫您的真實身分證字號 / 居留證號" required>
+								</div>
+							</div>
+							
+							
+							<div class="form-row">
+								<div>
+									<label>聯絡地址 <span>*</span></label>
+									<input type="address" placeholder="請填寫地址">
+								</div>
+							</div>
+
+
+
+							<div class="form-row two-cols">
+								<label><input type="radio" name="anonymous" value="no"> 我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</label> 
+							</div>
+                        
+							<div class="form-row two-cols">
+								<label><input type="radio" name="anonymous" value="no"> 我同意會員（會員代表）有表決權、選舉權、被選舉權與罷免權。每一會員（會員代表）為一權。</label> 
+							</div>
+
+							<button type="submit">確認送出</button>
+						</form>	
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		
+		new WOW().init();
+
+		$(".imgLiquidFill").imgLiquid({fill:true});
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+			} else {
+				$("#header").removeClass("fixed");
+			}
+		});
+
+		// 點擊 #menu-toggle 切換 .nav_box
+		$("#menu-toggle").on("click", function() {
+			$(".nav_box").toggle();
+		});
+	})
+
+	// 縣市選取 
+	let citySelect = document.getElementById("city");
+	let districtSelect = document.getElementById("district");
+	let cityData = {};
+  
+	// 載入 JSON 資料
+	fetch("js/tw_city_districts.json")
+	  .then(res => res.json())
+	  .then(data => {
+		cityData = data;
+  
+		// 將縣市填入 city select
+		for (let city in data) {
+		  let opt = document.createElement("option");
+		  opt.value = city;
+		  opt.textContent = city;
+		  citySelect.appendChild(opt);
+		}
+	  });
+  
+	// 當縣市選擇改變，更新區域選單
+	citySelect.addEventListener("change", function () {
+	  let selectedCity = this.value;
+	  let districts = cityData[selectedCity] || [];
+  
+	  // 清除舊選項
+	  districtSelect.innerHTML = '<option value="">請選擇</option>';
+  
+	  districts.forEach(function (d) {
+		let opt = document.createElement("option");
+		opt.value = d;
+		opt.textContent = d;
+		districtSelect.appendChild(opt);
+	  });
+	});
+  </script>
+</html>

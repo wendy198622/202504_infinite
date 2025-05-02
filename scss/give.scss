@@ -100,3 +100,283 @@
     gap: 40px;
     margin-top: 40px;
 }
+
+.application_content{
+    padding: 80px 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_title{
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 600;
+        letter-spacing: 3px;
+        img{
+            width: 80px;
+        }
+        h3{
+            margin-top: 20px;
+        }
+    }
+    .content_faq{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        h5{
+            position: relative;
+            padding-left: 54px;
+            &:before{
+                content: "";
+                width: 64px;
+                height: 64px;
+                background: url(../img/bg-circle.svg) left bottom no-repeat;
+                background-size: contain;
+                position: absolute;
+                z-index: -1;
+                left: -14px;
+                top: -16px;
+            }
+            &:after{
+                content: "Ｑ：";
+                width: 64px;
+                position: absolute;
+                z-index: -1;
+                left: 0px;
+                top: -12px;
+                padding: 12px 0 12px 4px;
+            }
+        }
+        p{
+            position: relative;
+            margin-left: 54px;
+            background: #F4F5F6;
+            margin-top: 12px;
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+        .info_photo{
+            position: relative;
+            .name{
+                width: 42%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .info_feature{
+            ul{
+                max-width: 800px;
+                margin: 0 auto;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 2;
+                    letter-spacing: 1px;
+                    font-family: $_font-sans;
+                    justify-content: space-between;
+                    padding: 12px 0 12px 54px;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background: url(../img/icon-Founder.svg) center center no-repeat;
+                        background-size: cover;
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 10px;
+                        left: 0;
+                    }
+                    &:nth-child(1){ margin-left: 0;}
+                    &:nth-child(2){ margin-left: 42px;}
+                    &:nth-child(3){ margin-left: 64px;}
+                    &:nth-child(4){ margin-left: 32px;}
+                }
+
+                li + li{
+                    margin-top: 12px;
+                }
+            }
+        }
+    }  
+    .content_form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        input[type="radio"]{
+            display: none;
+        }
+        label.tab-option{
+            padding: 6px 32px;
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            border-radius: 32px;
+            margin: 10px 12px 0;
+            display: inline-block;
+            background: #fff;
+            position: relative;
+            &::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: $linear-color;
+                position: absolute;
+                z-index: -1;
+                top: -2px;
+                left: -2px;
+                border-radius: 32px;
+                padding: 2px;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+
+        #tab-option1:checked ~ .tab-option1,
+        #tab-option2:checked ~ .tab-option2{
+            background: $linear-color;
+            color: #fff;
+        }
+
+        .tab-content{
+            display: none;
+        }
+
+        #tab-option1:checked ~ .tab-content1,
+        #tab-option2:checked ~ .tab-content2 {
+            display: block;
+        }
+
+        .tab-content{
+            width: 100%;
+            margin-top: 60px;
+            @media (max-width: 1480px){
+                width: 100%;
+                padding: 0 40px;
+            }
+            @media (max-width: 800px){
+                padding: 0 20px;
+            }
+
+            .inquiry-form, .cooperate-form {
+                background: #f4f5f6;
+                padding: 40px;
+                border-radius: 20px;
+              
+                label {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    letter-spacing: 1px;
+              
+                    span {
+                      color: red;
+                    }
+                    span.note{
+                        display: flex;
+                        font-size: 12px;
+                        // margin-left: 20px;
+                        color: #717171;
+                    }
+                }
+                input[type="text"],
+                input[type="tel"],
+                input[type="email"],
+                input[type="date"],
+                input[type="department"],
+                input[type="position"],
+                input[type="address"],
+                input[type="phone"],
+                input[type="fax"],
+                select,
+                textarea {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                }
+                
+            
+                input[type="radio"], input[type="checkbox"]{
+                    display: inline-block;
+                    border: 1px solid #000;
+                    padding: 0;
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 8px;
+                    &:checked{
+                        background: url(../img/check.svg) center center no-repeat;
+                        background-size: contain;
+                    }
+                }
+                textarea {
+                resize: vertical;
+                }
+
+                ::placeholder{
+                    color: #a8a8a8;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                }
+                
+                .form-row {
+                  margin-bottom: 20px;
+                }
+              
+                .two-cols {
+                  display: flex;
+                  gap: 20px;
+                }
+                
+                .two-cols > div {
+                  flex: 1;
+                }
+                
+                .three-cols {
+                  display: flex;
+                  justify-content: space-between;
+                  gap: 10px;
+                }
+                
+                .three-cols > select, .three-cols > div {
+                  width: 30%;
+                }
+                
+                .three-cols input {
+                  flex: 1;
+                }
+
+            button{
+                background: $linear-color;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 6px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: opacity 0.3s ease;
+                margin-top: 32px;
+                &:hover {
+                    opacity: 0.85;
+                  }
+              }
+            }
+              
+        }
+
+    }
+}
