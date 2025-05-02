@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>愛無限公益慈善發展協會</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/give.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	
+	<header id="header"></header>
+
+	<section>
+		<div class="topic give_topic">
+            <h1>愛付出</h1>
+		</div>
+		<div class="give_content gray">
+			<div class="container">
+				<div class="content_title">
+					<!-- <span class="gradient-text">Volunteer Stories</span> -->
+					<h3 class="gradient-text">加入會員</h3>
+				</div>
+				<div class="join_content">
+					<div class="join_icon">
+						<div class="item">
+							<div class="icon"><img src="img/join-icon1.svg" alt=""></div>
+							<h4>線上申請會員</h4>
+						</div>
+						<div class="item">
+							<div class="icon"><img src="img/join-icon2.svg" alt=""></div>
+							<h4>理事會審核通過</h4>
+						</div>
+						<div class="item">
+							<div class="icon"><img src="img/join-icon3.svg" alt=""></div>
+							<h4>繳納會費成為會員</h4>
+						</div>
+					</div>
+					<div class="join_link">
+						<a href="#" class="more">個人會員申請<span class="material-icons">
+							chevron_right
+							</span></a>
+						<a href="#" class="more">團體會員申請<span class="material-icons">
+							chevron_right
+							</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="give_content">
+			<div class="container">
+				<div class="content_title">
+					<!-- <span class="gradient-text">Volunteer Stories</span> -->
+					<h3 class="gradient-text">會費計算說明</h3>
+				</div>
+				<div class="join_content">
+					<div class="join_pricing">
+						<div class="item">
+							<img src="img/icon-Founder.svg" alt="">
+							<h4>入會費</h4>
+							<p>團體會員：新台幣 1,000 元</p>
+							<p>個人會員：新台幣 200 元</p>
+						</div>
+						<div class="item">
+							<img src="img/icon-Founder.svg" alt="">
+							<h4>長年會費</h4>
+							<p>團體會員：新台幣 1,000 元</p>
+							<p>個人會員：新台幣 300 元</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		
+		new WOW().init();
+
+		$(".imgLiquidFill").imgLiquid({fill:true});
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+			} else {
+				$("#header").removeClass("fixed");
+			}
+		});
+
+		// 點擊 #menu-toggle 切換 .nav_box
+		$("#menu-toggle").on("click", function() {
+			$(".nav_box").toggle();
+		});
+		
+		var mySwiper = new Swiper ('.swiper-container-story', {
+			slidesPerView: 3,
+      		spaceBetween: 40,
+			autoHeight: true,
+			autoplay: {
+				delay: 5000,  // 設定間隔時間 (毫秒)
+				disableOnInteraction: false, // 使用者操作後仍繼續自動播放
+			},
+			loop: true, // 讓輪播可以無限循環
+			pagination: {
+				el: '.swiper-pagination',  // 告訴Swiper要把小圓點放在哪個元素
+				clickable: true,            // 讓使用者可以點小圓點切換
+			},
+		})
+	})
+
+
+</script>
+</html>

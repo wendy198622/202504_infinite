@@ -143,5 +143,43 @@
 .charitypage_top{
     margin-top: 92px;
     padding-top: 40px;
+    .content_intro{
+        display: flex;
+        align-items: stretch;
+        gap: 40px;
+        margin-top: 40px;
+        .intro_photo{
+            width: 46%;
+        }
+        .intro_desc{
+            width: 54%;
+            .desc{
+                .share{
+                    display: flex;
+                    gap: 20px;
+
+                    .item{
+                        padding: 4px 12px;
+                        background: #9b9999;
+                        border-radius: 12px;
+                        span{
+                            vertical-align: middle;
+                            font-size: 18px;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+            ul{
+                li{
+                    a{
+                        background: $linear-color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
 
 }

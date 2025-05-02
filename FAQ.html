@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>愛無限公益慈善發展協會</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/share.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	
+	<header id="header"></header>
+
+	<section>
+		<div class="topic share_topic">
+            <h1>愛分享</h1>
+		</div>
+		<div class="share_content">
+			<div class="container">
+				<div class="content_title">
+					<img src="img/faq_icon.svg" alt="">
+					<h3>常見問題</h3>
+				</div>
+				<div class="content_faq">
+                    <div class="item">
+                        <h5>捐款收據資料錯誤或者遺失該如何處理?</h5>
+                        <p>若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。</p>
+                    </div>
+                    <div class="item">
+                        <h5>捐款收據資料錯誤或者遺失該如何處理?</h5>
+                        <p>若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。</p>
+                    </div>
+                    <div class="item">
+                        <h5>捐款收據資料錯誤或者遺失該如何處理?捐款收據資料錯誤或者遺失該如何處理?</h5>
+                        <p>若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。若您的捐款收據遺失或捐款資料有誤，請與我們聯繫，我們有專人為您核對捐款相關基本資料，並協助您更正後續事宜。</p>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		
+		new WOW().init();
+
+		$(".imgLiquidFill").imgLiquid({fill:true});
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+			} else {
+				$("#header").removeClass("fixed");
+			}
+		});
+
+		// 點擊 #menu-toggle 切換 .nav_box
+		$("#menu-toggle").on("click", function() {
+			$(".nav_box").toggle();
+		});
+	})
+  </script>
+</html>

@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<title>台東回響樂團</title>
+	<title>愛無限公益慈善發展協會</title>
 	<meta name="author" content="" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -13,14 +13,11 @@
 
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
-	<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+	<link rel="stylesheet" type="text/css" href="css/share.css" />
 	<!-- js -->
 	<script src="js/jquery-3.6.0.min.js"></script>
-	<!-- <script src="js/slick.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
 	<script src="js/wow.min.js"></script>
 
@@ -32,113 +29,248 @@
 </head>
 
 <body>
-    <header id="header"></header>
+	
+	<header id="header"></header>
 
 	<section>
-        <div class="topic contactus_topic">
-            <h2>contactus</h2>
-            <h1>演出接洽</h1>
-        </div>
-        <div class="theme theme_contact">
-            <div class="form container">
-                <!-- <div class="title">預約賞屋</div> -->
-                <div class="subtitle">歡迎蒞臨我們的網站！<br>
-                        若您對我們的樂團演出有興趣，或希望進一步了解合作細節，請隨時與我們聯繫。<br>
-                        我們期待您的來信，並將盡快回覆，與您一同打造難忘的音樂時刻！</div>
-                <!-- <div class="item wow fadeInUp" data-wow-delay=".3s">
-                    <select>
-                        <option>* 請選擇建案</option>
-                        <option>AAA</option>
-                        <option>BBB</option>
-                        <option>CCC</option>
-                    </select>
-                </div> -->
-                <div class="item wow fadeInUp" data-wow-delay=".6s">
-                    <input type="text" v-model="name" name="name" placeholder="* 姓名" required />
-                </div>
-                <div class="item wow fadeInUp" data-wow-delay=".9s">
-                    <input type="text" v-model="phone" name="phone" placeholder="* 連絡電話" required />
-                </div>
-                <div class="item wow fadeInUp" data-wow-delay="1.2s">
-                    <select>
-                        <option>聯絡時段</option>
-                        <option>8:00-12:00</option>
-                        <option>12:00-17:00</option>
-                        <option>17:00-22:00</option>
-                    </select>
-                </div>
-                <div class="item wow fadeInUp" data-wow-delay="1.5s">
-                    <!-- <label for="email">E-mail <span>*</span></label> -->
-                    <input type="text" v-model="email" name="email" placeholder="* E-mail" required />
-                </div>
-                <div class="item full wow fadeInUp" data-wow-delay="1.8s">
-                    <!-- <label for="message">留言</label> -->
-                    <textarea id="message" v-model="message" name="message" placeholder="留言" required></textarea>
-                </div>
-                <div class="item full no-bg wow fadeInUp" data-wow-delay="2.1s">
-                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" checked>
-                    <label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="privacy.html" target="_blank">隱私權政策規範</a></label>
-                </div>
-                <button class="send wow fadeInUp" data-wow-delay="2.5s">送出</button>
-            </div>
-        </div>
+		<div class="topic share_topic">
+            <h1>愛分享</h1>
+		</div>
+		<div class="share_content">
+			<div class="container">
+				<div class="content_form">                   
+					<input type="radio" name="smart-tab" id="tab-option1" checked>
+					<label for="tab-option1" class="tab-option tab-option1">聯絡我們</label>
+
+					<input type="radio" name="smart-tab" id="tab-option2">
+					<label for="tab-option2" class="tab-option tab-option2">公益合作</label>
+
+					<div class="tab-content tab-content1">
+						<form class="inquiry-form">
+							<div class="form-row">
+								<label>諮詢類型 <span>*</span></label>
+								<select required>
+									<option value="" disabled selected hidden>請選擇</option>
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>單位</label>
+									<input type="text" placeholder="請填寫單位名稱">
+								</div>
+								<div>
+									<label>聯絡人</label>
+									<input type="text" placeholder="請填寫您的真實姓名">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>聯絡電話 <span>*</span></label>
+									<input type="tel" placeholder="0910123456" required>
+								</div>
+								<div>
+									<label>電子信箱</label>
+									<input type="email" placeholder="example@loveinfinite.com">
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<label>聯絡地址 <span>*</span></label>
+								<div class="three-cols">
+									<!-- 縣市選單 -->
+									<select id="city" name="city" required>
+										<option value="" disabled selected hidden>請選擇縣市</option>
+									</select>
+									<!-- 鄉鎮市區選單 -->
+									<select id="district" name="district" required>
+										<option value="" disabled selected hidden>請先選擇縣市</option>
+									</select>
+									<input type="text" placeholder="請填寫路名 / 街 / 號 / 樓">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>出生年月日 <span>*</span></label>
+									<input type="date" required>
+								</div>
+								<div>
+									<label>身份證字號 / 居留證號 <span>*</span></label>
+									<input type="text" placeholder="請填寫您的真實身分證字號 / 居留證號" required>
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>職業</label>
+									<select>
+										<option value="" disabled selected hidden>請選擇</option>
+										<option value="student">學生</option>
+										<option value="public_servant">公務人員</option>
+										<option value="teacher">教師</option>
+										<option value="medical_staff">醫療人員</option>
+										<option value="engineer">工程師／資訊從業者</option>
+										<option value="business">企業員工／業務人員</option>
+										<option value="finance">金融／保險業</option>
+										<option value="service">服務業</option>
+										<option value="freelancer">自由工作者</option>
+										<option value="arts">藝術／設計／創作</option>
+										<option value="law">法律／政治相關</option>
+										<option value="media">媒體／公關／廣告</option>
+										<option value="retired">退休人士</option>
+										<option value="homemaker">家庭主婦／夫</option>
+										<option value="unemployed">待業中</option>
+										<option value="other">其他</option>
+									</select>
+								</div>
+								<div>
+									<label>最高學歷</label>
+									<select>
+										<option value="" disabled selected hidden>請選擇</option>
+										<option value="elementary">小學</option>
+										<option value="junior_high">國中</option>
+										<option value="senior_high">高中／高職</option>
+										<option value="associate">專科</option>
+										<option value="bachelor">大學／學士</option>
+										<option value="master">碩士</option>
+										<option value="doctorate">博士</option>
+										<option value="other">其他</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<label>主旨</label>
+								<input type="text" placeholder="請填寫來信目的">
+							</div>
+							
+							<div class="form-row">
+								<label>諮詢內容</label>
+								<textarea rows="5" placeholder="請簡述來信原因"></textarea>
+							</div>
+						</form>							  
+					</div>
+					<div class="tab-content tab-content2">
+						<form class="cooperate-form">							
+							<div class="form-row two-cols">
+								<div>
+									<label>單位</label>
+									<input type="text" placeholder="請填寫單位名稱">
+								</div>
+								<div>
+									<label>聯絡人</label>
+									<input type="text" placeholder="請填寫您的真實姓名">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>聯絡電話 <span>*</span></label>
+									<input type="tel" placeholder="0910123456" required>
+								</div>
+								<div>
+									<label>電子信箱</label>
+									<input type="email" placeholder="example@loveinfinite.com">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>部門</label>
+									<input type="department" placeholder="行銷部">
+								</div>
+								<div>
+									<label>職稱</label>
+									<input type="position" placeholder="專員">
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<label>聯絡地址 <span>*</span></label>
+								<input type="address" placeholder="請填寫地址">
+							</div>
+							<div class="form-row">
+								<label>主旨</label>
+								<input type="text" placeholder="請填寫來信目的">
+							</div>
+							
+							<div class="form-row">
+								<label>合作內容</label>
+								<textarea rows="5" placeholder="請簡述來信原因"></textarea>
+							</div>
+						</form>	
+					</div>
+	
+				</div>
+			</div>
+		</div>
 	</section>
-
-	<div class="popup popup_send">
-		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
-    </div>
-
 	
 	<footer id="footer"></footer>
 
 </body>
 <script>
-        $(document).ready(function () {
-            
-            new WOW().init();
-    
-            $(".imgLiquidFill").imgLiquid({fill:true});
-    
-            $('#header').load('page/header.html');
-            $('#footer').load('page/footer.html');
-    
-            $(window).on("scroll", function() {
-                if ($(window).scrollTop() > 100) {
-                    $("#header").addClass("fixed");
-                    // $(".logo").fadeIn(200);
-                } else {
-                    $("#header").removeClass("fixed");
-                    // $(".logo").fadeOut(0);
-                }
-            });
-    
-            // 點擊 #menu-toggle 切換 .nav_box
-            $("#menu-toggle").on("click", function() {
-                $(".nav_box").toggle();
-            });
-            
-            var mySwiper = new Swiper ('.swiper-container', {
-                slidesPerView: 3,
-                  spaceBetween: 30,
-                autoHeight: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    type: 'bullets',
-                        // 	clickable: true,
-                        // renderBullet: function (index, className) {
-                        // return '<span class="' + className + '">' + (menu[index]) + '</span>';
-                        // },
-                },
-    
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            })
-        })
+	$(document).ready(function () {
+		
+		new WOW().init();
 
+		$(".imgLiquidFill").imgLiquid({fill:true});
 
-</script>
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+			} else {
+				$("#header").removeClass("fixed");
+			}
+		});
+
+		// 點擊 #menu-toggle 切換 .nav_box
+		$("#menu-toggle").on("click", function() {
+			$(".nav_box").toggle();
+		});
+	})
+
+	// 縣市選取 
+	let citySelect = document.getElementById("city");
+	let districtSelect = document.getElementById("district");
+	let cityData = {};
+  
+	// 載入 JSON 資料
+	fetch("js/tw_city_districts.json")
+	  .then(res => res.json())
+	  .then(data => {
+		cityData = data;
+  
+		// 將縣市填入 city select
+		for (let city in data) {
+		  let opt = document.createElement("option");
+		  opt.value = city;
+		  opt.textContent = city;
+		  citySelect.appendChild(opt);
+		}
+	  });
+  
+	// 當縣市選擇改變，更新區域選單
+	citySelect.addEventListener("change", function () {
+	  let selectedCity = this.value;
+	  let districts = cityData[selectedCity] || [];
+  
+	  // 清除舊選項
+	  districtSelect.innerHTML = '<option value="">請選擇</option>';
+  
+	  districts.forEach(function (d) {
+		let opt = document.createElement("option");
+		opt.value = d;
+		opt.textContent = d;
+		districtSelect.appendChild(opt);
+	  });
+	});
+  </script>
 </html>
