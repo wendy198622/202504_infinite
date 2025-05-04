@@ -20,7 +20,7 @@
     background-size: cover;
 }
 .donate_content{
-    // padding: 60px 0;
+    padding: 60px 0;
     background: url(../img/home_service-bg.svg) left top no-repeat;
     background-size: contain;
     &.gray{
@@ -40,6 +40,38 @@
             margin-top: 20px;
         }
     }
+     
+    .content_intro{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .intro_photo{
+            position: relative;
+        }
+
+        .intro_feature{
+            ul{
+                max-width: 800px;
+                margin: 0 auto;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 2;
+                    letter-spacing: 1px;
+                    font-family: $_font-sans;
+                    justify-content: space-between;
+                    padding: 12px 0 12px 54px;
+                    position: relative;
+                }
+
+                li + li{
+                    margin-top: 12px;
+                }
+            }
+        }
+    } 
     .donate_icon{
         display: flex;
         justify-content: space-between;
