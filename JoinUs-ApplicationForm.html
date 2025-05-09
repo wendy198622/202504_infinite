@@ -176,7 +176,7 @@
 								</div>
 							</div>
 
-							<div class="form-row two-cols"> 
+							<!-- <div class="form-row two-cols"> 
 								<label><strong>收據寄送方式<span style="color:red;">＊</span></strong></label><br>
 								<label><input type="radio" name="donation_type" value="single"> 電子收據</label>
 							  </div>
@@ -185,7 +185,7 @@
 								<label><strong>授權本會將捐款明細上傳國稅局<span class="note" style="color:red;"> (備註:此欄位為若有額外捐款者需填寫，以利您綜合所得稅申報快速完成)</span></strong></label><br>
 								<label><input type="radio" name="payment_method" value="yes"> 同意</label>
 								<label><input type="radio" name="payment_method" value="no"> 不同意</label>                        
-							</div>
+							</div> -->
                         
 							<div class="form-row two-cols">
 								<label><input type="radio" name="anonymous" value="no"> 我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</label> 
@@ -258,34 +258,30 @@
 							
 							<div class="form-row two-cols">
 								<div>
+									<label>室內電話</label>
+									<input type="tel" placeholder="02-00000000#123" required>
+								</div>
+								<div>
+									<label>傳真號碼 <span>*</span></label>
+									<input type="fax" placeholder="02-00000000" required>
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<div>
+									<label>電子信箱</label>
+									<input type="email" placeholder="example@loveinfinite.com">
+								</div>
+							</div>
+							
+							<div class="form-row two-cols">
+								<div>
 									<label>負責人姓名 <span>*</span></label>
 									<input type="text" placeholder="" required>
 								</div>
 								<div>
 									<label>負責人電話</label>
 									<input type="tel" placeholder="02-00000000#123" required>
-								</div>
-							</div>
-							
-							<div class="form-row two-cols">
-								<div>
-									<label>室內電話</label>
-									<input type="tel" placeholder="02-00000000#123" required>
-								</div>
-								<div>
-									<label>手機號碼 <span>*</span></label>
-									<input type="phone" placeholder="0910123456" required>
-								</div>
-							</div>
-							
-							<div class="form-row two-cols">
-								<div>
-									<label>傳真號碼 <span>*</span></label>
-									<input type="fax" placeholder="02-00000000" required>
-								</div>
-								<div>
-									<label>電子信箱</label>
-									<input type="email" placeholder="example@loveinfinite.com">
 								</div>
 							</div>
 
@@ -423,13 +419,13 @@
 
 	//tab 切換
 	window.addEventListener('DOMContentLoaded', () => {
-    const hash = window.location.hash;
-    if (hash) {
-      const targetTab = document.querySelector(`input[type="radio"]${hash}`);
-      if (targetTab) {
-        targetTab.checked = true;
-      }
-    }
-  });
+		const hash = window.location.hash;
+		if (hash) {
+		const targetTab = document.querySelector(`input[type="radio"]${hash}`);
+		if (targetTab) {
+			targetTab.checked = true;
+		}
+		}
+	});
   </script>
 </html>
