@@ -44,8 +44,8 @@
             font-size: 48px;
             line-height: 1.4;
             letter-spacing: 2px;
-            @media (max-width: 640px){
-                font-size: 28px;
+            @media (max-width: 600px){
+                font-size: 32px;
             }
         }
     }
@@ -337,6 +337,9 @@
             display: inline-flex;
             font-size: 32px;
             font-weight: 600;
+            @media (max-width: 600px){
+                font-size: 24px;
+            }
         }
         ul{
             display: inline-flex;
@@ -536,7 +539,6 @@
                     width: calc(100% - 40px);
                     color: #fff;
                     float: right;
-                    // line-height: 48px;
 
                     a{
                         display: inline-block;
@@ -590,7 +592,9 @@
                 line-height: 2;
                 letter-spacing: 4px;
                 font-weight: 600;
-                // visibility: visible !important;
+                @media (max-width: 600px){
+                    font-size: 24px;
+                }
             }
             .photo{
                 width: 100%;

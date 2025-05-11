@@ -14,6 +14,11 @@
         <span></span>
     </button>
 
+    <div class="donate_btn">
+        <a href="Donation.html" class="nav_title gradient-text gradient-button">捐款</a>
+        <!-- <button class="gradient-button gradient-text">點我支持</button> -->
+    </div>
+
     <div class="nav_box">
         <ul class="nav_primary">
             <li>
@@ -74,10 +79,6 @@
                     <li><a href=".html"></a></li>
                 </ul>
             </li>
-            <li>
-                <a href="Donation.html" class="nav_title gradient-text gradient-button">捐款</a>
-                <!-- <button class="gradient-button gradient-text">點我支持</button> -->
-            </li>
         </ul>
     </div>
 </nav>
@@ -86,7 +87,7 @@
 <Script>
     $(document).ready(function () {
 
-        if ($(window).width() > 960) {
+        if ($(window).width() > 961) {
             $('.nav_primary > li').hover(
                 function() {
                     $(this).find('.nav_secondery').stop(true, true).slideDown(200);
@@ -95,22 +96,23 @@
                     $(this).find('.nav_secondery').stop(true, true).slideUp(200);
                 }
             );
+
+            $('.nav_secondery li').hover(
+                function() {
+                // 滑入時，所有 a 加上 gradient-text
+                $(this).find('a').addClass('gradient-text');
+                },
+                function() {
+                // 滑出時，移除 gradient-text
+                $(this).find('a').removeClass('gradient-text');
+                }
+            );
         }
         
         $("#menu-toggle").click(function() {
             $(".nav_box").toggleClass("open");
+            $(this).toggleClass("active");
         });
-
-        $('.nav_secondery li').hover(
-            function() {
-            // 滑入時，所有 a 加上 gradient-text
-            $(this).find('a').addClass('gradient-text');
-            },
-            function() {
-            // 滑出時，移除 gradient-text
-            $(this).find('a').removeClass('gradient-text');
-            }
-        );
 
     });
 </Script>

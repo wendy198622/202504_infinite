@@ -102,15 +102,10 @@
 				$("#header").removeClass("fixed");
 			}
 		});
-
-		// 點擊 #menu-toggle 切換 .nav_box
-		$("#menu-toggle").on("click", function() {
-			$(".nav_box").toggle();
-		});
 		
 		var mySwiper = new Swiper ('.swiper-container-story', {
-			slidesPerView: 3,
-      		spaceBetween: 40,
+			slidesPerView: 1,
+      		spaceBetween: 20,
 			autoHeight: true,
 			autoplay: {
 				delay: 5000,  // 設定間隔時間 (毫秒)
@@ -121,6 +116,12 @@
 				el: '.swiper-pagination',  // 告訴Swiper要把小圓點放在哪個元素
 				clickable: true,            // 讓使用者可以點小圓點切換
 			},
+			breakpoints: {
+				800: {
+					slidesPerView: 3,
+					spaceBetween: 40
+				},
+			}
 		})
 	})
 

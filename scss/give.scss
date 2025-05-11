@@ -1,3 +1,4 @@
+
 @import '_setting';
 @import '_header';
 @import '_footer';
@@ -8,11 +9,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 960px){
+       margin-top: 88px;
+    }
+    @media (max-width: 800px){
+       margin-top: 70px;
+       height: 320px;
+    }
+    @media (max-width: 600px){
+        height: 240px;
+    }
+    @media (max-width: 400px){
+       margin-top: 66px;
+    }
     h1{
        font-size: 48px;
        color: #fff;
        font-weight: 500;
        letter-spacing: 8px;
+       @media (max-width: 600px){
+           font-size: 32px;
+       }
     }
 }
 .give_topic{
@@ -38,6 +55,9 @@
         font-weight: 600;
         letter-spacing: 3px;
         text-align: center;
+        @media (max-width: 600px){
+            font-size: 24px;
+        }
         h3{
             display: inline-block;
             z-index: 2;
@@ -50,6 +70,9 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media (max-width: 800px){
+            flex-direction: column;
+        }
 
         .intro_photo{
             position: relative;
@@ -68,6 +91,9 @@
                     justify-content: space-between;
                     padding: 12px 0 12px 54px;
                     position: relative;
+                    @media (max-width: 800px){
+                        padding: 12px 0;
+                    }
                 }
 
                 li + li{
@@ -82,14 +108,42 @@
             justify-content: space-between;
             max-width: 960px;
             margin: 40px auto 80px;
+            @media (max-width: 800px){
+                flex-direction: column;
+                margin: 40px auto 20px;
+            }
             .item{
                 width: 25%;
+                @media (max-width: 800px){
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                }
+
+                .icon{
+                    width: 200px;
+                    @media (max-width: 800px){
+                        width: 160px;
+                    }
+                }
+                h4{
+                    text-align: center;
+                }
             }
         }
         .join_link{
             display: flex;
             justify-content: center;            
             gap: 40px;
+            @media (max-width: 800px){
+                width: 100%;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
             a{
                 font-size: 24px;
                 font-weight: 500;
@@ -104,18 +158,35 @@
             display: flex;
             justify-content: center;          
             gap: 60px;
+            @media (max-width: 800px){
+                width: 100%;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
             .item{
                 background: url(../img/bg-gray.svg) center center no-repeat;
                 background-size: contain;
                 padding: 40px 60px 60px;
+                @media (max-width: 800px){
+                    width: 100%;
+                    padding: 40px 8px;
+                }
                 img{
                     width: 40px;
                     margin: 0 auto;
+                    @media (max-width: 800px){
+                        margin-top: -20px;
+                    }
                 }
                 h4{
                     text-align: center;
                     margin-top: 12px;
                     margin-bottom: 24px;
+                    @media (max-width: 800px){
+                        margin-bottom: 12px;
+                    }
                 }
                 p{
                     margin-top: 4px;
@@ -132,6 +203,14 @@
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+    @media (max-width: 600px){
+        gap: 20px;
+    }
+    .item{
+        @media (max-width: 600px){
+            width: calc((100% - 20px) / 2);
+        }
+    }
 }
 
 .application_content{
@@ -146,6 +225,9 @@
         line-height: 1.2;
         font-weight: 600;
         letter-spacing: 3px;
+        @media (max-width: 600px){
+            font-size: 24px;
+        }
         img{
             width: 80px;
         }
@@ -297,19 +379,25 @@
                 padding: 0 40px;
             }
             @media (max-width: 800px){
-                padding: 0 20px;
+                padding: 0;
             }
 
             .inquiry-form, .cooperate-form {
                 background: #f4f5f6;
                 padding: 40px;
                 border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @media (max-width: 800px){
+                    padding: 40px 20px;
+                }
               
                 label {
                     display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    font-weight: bold;
+                    // flex-wrap: wrap;
+                    // align-items: center;
+                    font-weight: normal;
                     margin-bottom: 5px;
                     letter-spacing: 1px;
               
@@ -334,12 +422,12 @@
                 input[type="fax"],
                 select,
                 textarea {
-                width: 100%;
-                padding: 10px;
-                font-size: 16px;
-                border-radius: 6px;
-                border: 1px solid #ccc;
-                box-sizing: border-box;
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 6px;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
                 }
                 
             
@@ -356,7 +444,12 @@
                     }
                 }
                 textarea {
-                resize: vertical;
+                    resize: vertical;
+                }
+
+                p.legal{
+                    width: calc(100% - 30px);
+                    margin-top: 0;
                 }
 
                 ::placeholder{
@@ -366,26 +459,40 @@
                 }
                 
                 .form-row {
-                  margin-bottom: 20px;
+                    width: 100%;
+                    margin-bottom: 20px;
                 }
               
                 .two-cols {
                   display: flex;
                   gap: 20px;
+                  @media (max-width: 600px){
+                      flex-direction: column;
+                      align-items: flex-start;
+                  }
                 }
                 
                 .two-cols > div {
                   flex: 1;
+                  @media (max-width: 600px){
+                      width: 100%;
+                  }
                 }
                 
                 .three-cols {
                   display: flex;
                   justify-content: space-between;
                   gap: 10px;
+                  @media (max-width: 600px){
+                      flex-wrap: wrap;
+                  }
                 }
                 
                 .three-cols > select, .three-cols > div {
                   width: 30%;
+                  @media (max-width: 600px){
+                      width: calc((100% - 10px) / 2);
+                  }
                 }
                 
                 .three-cols input {
@@ -393,6 +500,7 @@
                 }
 
             button{
+                width: 200px;
                 background: $linear-color;
                 color: white;
                 border: none;

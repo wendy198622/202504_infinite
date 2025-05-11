@@ -186,13 +186,22 @@
 								<label><input type="radio" name="payment_method" value="yes"> 同意</label>
 								<label><input type="radio" name="payment_method" value="no"> 不同意</label>                        
 							</div> -->
-                        
-							<div class="form-row two-cols">
-								<label><input type="radio" name="anonymous" value="no"> 我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</label> 
+							<div class="form-row">
+								<p>入會費用: 500元 (會員費200元，常年會費300元)</p>
 							</div>
                         
 							<div class="form-row two-cols">
-								<label><input type="radio" name="anonymous" value="no"> 我同意會員（會員代表）有表決權、選舉權、被選舉權與罷免權。每一會員（會員代表）為一權。</label> 
+								<label>
+									<input type="checkbox" name="anonymous" value="no"> 
+									<p class="legal">我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</p>
+								</label> 
+							</div>
+                        
+							<div class="form-row two-cols">
+								<label>
+									<input type="checkbox" name="anonymous" value="no"> 
+									<p class="legal">我同意會員（會員代表）有表決權、選舉權、被選舉權與罷免權。每一會員（會員代表）為一權。</p>
+								</label> 
 							</div>
 
 							<button type="submit">確認送出</button>
@@ -335,14 +344,22 @@
 								</div>
 							</div>
 
-
+							<div class="form-row">
+								<p>入會費用: 2000元 (會員費1000元，常年會費1000元)</p>
+							</div>
 
 							<div class="form-row two-cols">
-								<label><input type="radio" name="anonymous" value="no"> 我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</label> 
+								<label>
+									<input type="checkbox" name="anonymous" value="no"> 
+									<p class="legal">我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</p>
+								</label> 
 							</div>
                         
 							<div class="form-row two-cols">
-								<label><input type="radio" name="anonymous" value="no"> 我同意會員（會員代表）有表決權、選舉權、被選舉權與罷免權。每一會員（會員代表）為一權。</label> 
+								<label>
+									<input type="checkbox" name="anonymous" value="no"> 
+									<p class="legal">我同意會員（會員代表）有表決權、選舉權、被選舉權與罷免權。每一會員（會員代表）為一權。</p>
+								</label> 
 							</div>
 
 							<button type="submit">確認送出</button>
@@ -373,11 +390,6 @@
 			} else {
 				$("#header").removeClass("fixed");
 			}
-		});
-
-		// 點擊 #menu-toggle 切換 .nav_box
-		$("#menu-toggle").on("click", function() {
-			$(".nav_box").toggle();
 		});
 	})
 

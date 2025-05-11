@@ -8,11 +8,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 960px){
+       margin-top: 88px;
+    }
+    @media (max-width: 800px){
+       margin-top: 70px;
+       height: 320px;
+    }
+    @media (max-width: 600px){
+        height: 240px;
+    }
+    @media (max-width: 400px){
+       margin-top: 66px;
+    }
     h1{
        font-size: 48px;
        color: #fff;
        font-weight: 500;
        letter-spacing: 8px;
+       @media (max-width: 600px){
+           font-size: 32px;
+       }
     }
 }
 .donate_topic{
@@ -36,6 +52,9 @@
         line-height: 1.2;
         font-weight: 600;
         letter-spacing: 3px;
+        @media (max-width: 600px){
+            font-size: 24px;
+        }
         h3{
             margin-top: 20px;
         }
@@ -46,6 +65,9 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media (max-width: 600px){
+            flex-direction: column;
+        }
 
         .intro_photo{
             position: relative;
@@ -64,6 +86,9 @@
                     justify-content: space-between;
                     padding: 12px 0 12px 54px;
                     position: relative;
+                    @media (max-width: 600px){
+                        padding: 12px 0;
+                    }
                 }
 
                 li + li{
@@ -75,15 +100,21 @@
     .donate_icon{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 40px;
-        margin-top: 80px;
+        margin: 80px 0 40px;
         display: flex;
         align-items: center;
+        @media (max-width: 600px){
+            margin: 40px 0 40px;
+            flex-direction: column;
+        }
         .item{
             width: 30%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media (max-width: 600px){
+                width: 100%;
+            }
             .icon{
                 width: 80%;
                 margin-top: 20px;
@@ -92,10 +123,19 @@
                 margin: 20px 0 0;
             }
         }
+        span{
+            @media (max-width: 600px){
+                transform: rotate(90deg);
+                margin-top: 10px;
+            }
+        }
     }
     .content_form{
         width: 100%;
         margin-top: 60px;
+        @media (max-width: 600px){
+            margin-top: 28px;
+        }
         .donate_form{
             width: 100%;
             display: flex;
@@ -105,29 +145,28 @@
             padding: 40px;
             border-radius: 20px;
             background: #f4f5f6;
+            @media (max-width: 600px){
+                padding: 40px 20px;
+            }
             
             h3{
                 margin: 0 auto 40px;
             }
             label {
+                width: 100%;
                 display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                font-weight: bold;
+                // flex-wrap: wrap;
+                // align-items: center;
+                font-weight: normal;
                 margin-bottom: 5px;
                 letter-spacing: 1px;
             
                 span {
                     color: red;
                 }
-                span.note{
-                    display: flex;
-                    font-size: 12px;
-                    margin-left: 20px;
-                    color: #717171;
-                }
                 a{
                     text-decoration: underline;
+                    display: inline-block;
                 }
             }
             input[type="text"],
@@ -163,10 +202,20 @@
                 resize: vertical;
             }
             
-              .gradient-button:hover {
-                opacity: 0.85;
-              }
+            .gradient-button:hover {
+            opacity: 0.85;
+            }
 
+            p.legal{
+                width: calc(100% - 30px);
+                margin-top: 0;
+                span.note{
+                    display: flex;
+                    font-size: 12px;
+                    // margin-left: 20px;
+                    color: #717171;
+                }
+            }
             ::placeholder{
                 color: #a8a8a8;
                 letter-spacing: 1px;
@@ -182,12 +231,31 @@
             .two-cols {
                 display: flex;
                 gap: 20px;
+                align-items: center;
+                @media (max-width: 600px){
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                & > div {
+                    flex: 1;
+                    @media (max-width: 600px){
+                        width: 100%;
+                    }
+                    .group {
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        input[type="phone"]{
+                            width: calc(100% - 120px);
+                        }
+                        input[type="radio"]{
+                            margin-left: 20px;
+                            vertical-align: middle;
+                        }
+                    }
+                    
+                }
             }
-            
-            .two-cols > div {
-                flex: 1;
-            }
-            
+
             .three-cols {
                 display: flex;
                 gap: 10px;
