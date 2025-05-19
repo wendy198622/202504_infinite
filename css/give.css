@@ -1581,6 +1581,10 @@ footer .copyright {
   letter-spacing: 1px;
 }
 
+.application_content .content_form .tab-content .inquiry-form label.w100, .application_content .content_form .tab-content .cooperate-form label.w100 {
+  width: 100%;
+}
+
 .application_content .content_form .tab-content .inquiry-form label span, .application_content .content_form .tab-content .cooperate-form label span {
   color: red;
 }
@@ -1602,6 +1606,8 @@ footer .copyright {
 .application_content .content_form .tab-content .inquiry-form input[type="address"],
 .application_content .content_form .tab-content .inquiry-form input[type="phone"],
 .application_content .content_form .tab-content .inquiry-form input[type="fax"],
+.application_content .content_form .tab-content .inquiry-form input[type="invoice"],
+.application_content .content_form .tab-content .inquiry-form input[type="taxid"],
 .application_content .content_form .tab-content .inquiry-form select,
 .application_content .content_form .tab-content .inquiry-form textarea, .application_content .content_form .tab-content .cooperate-form input[type="text"],
 .application_content .content_form .tab-content .cooperate-form input[type="tel"],
@@ -1612,6 +1618,8 @@ footer .copyright {
 .application_content .content_form .tab-content .cooperate-form input[type="address"],
 .application_content .content_form .tab-content .cooperate-form input[type="phone"],
 .application_content .content_form .tab-content .cooperate-form input[type="fax"],
+.application_content .content_form .tab-content .cooperate-form input[type="invoice"],
+.application_content .content_form .tab-content .cooperate-form input[type="taxid"],
 .application_content .content_form .tab-content .cooperate-form select,
 .application_content .content_form .tab-content .cooperate-form textarea {
   width: 100%;
@@ -1713,7 +1721,7 @@ footer .copyright {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 
 @media (max-width: 600px) {
@@ -1724,12 +1732,12 @@ footer .copyright {
 }
 
 .application_content .content_form .tab-content .inquiry-form .three-cols > select, .application_content .content_form .tab-content .inquiry-form .three-cols > div, .application_content .content_form .tab-content .cooperate-form .three-cols > select, .application_content .content_form .tab-content .cooperate-form .three-cols > div {
-  width: 30%;
+  width: calc((100% - 40px) / 3);
 }
 
 @media (max-width: 600px) {
   .application_content .content_form .tab-content .inquiry-form .three-cols > select, .application_content .content_form .tab-content .inquiry-form .three-cols > div, .application_content .content_form .tab-content .cooperate-form .three-cols > select, .application_content .content_form .tab-content .cooperate-form .three-cols > div {
-    width: calc((100% - 10px) / 2);
+    width: calc((100% - 20px) / 2);
   }
 }
 

@@ -395,11 +395,16 @@
               
                 label {
                     display: flex;
+                    // max-width: 100%;
                     // flex-wrap: wrap;
                     // align-items: center;
                     font-weight: normal;
                     margin-bottom: 5px;
                     letter-spacing: 1px;
+
+                    &.w100{
+                        width: 100%;
+                    }
               
                     span {
                       color: red;
@@ -420,6 +425,8 @@
                 input[type="address"],
                 input[type="phone"],
                 input[type="fax"],
+                input[type="invoice"],
+                input[type="taxid"],
                 select,
                 textarea {
                     width: 100%;
@@ -482,16 +489,16 @@
                 .three-cols {
                   display: flex;
                   justify-content: space-between;
-                  gap: 10px;
+                  gap: 20px;
                   @media (max-width: 600px){
                       flex-wrap: wrap;
                   }
                 }
                 
                 .three-cols > select, .three-cols > div {
-                  width: 30%;
+                    width: calc((100% - 40px) / 3);
                   @media (max-width: 600px){
-                      width: calc((100% - 10px) / 2);
+                      width: calc((100% - 20px) / 2);
                   }
                 }
                 

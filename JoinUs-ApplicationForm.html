@@ -132,11 +132,11 @@
 								<label>聯絡地址 <span>*</span></label>
 								<div class="three-cols">
 									<!-- 縣市選單 -->
-									<select id="city" name="city" required>
+									<select id="city" class="city" name="city" required>
 										<option value="" disabled selected hidden>請選擇縣市</option>
 									</select>
 									<!-- 鄉鎮市區選單 -->
-									<select id="district" name="district" required>
+									<select id="district" class="district" name="district" required>
 										<option value="" disabled selected hidden>請先選擇縣市</option>
 									</select>
 									<input type="text" placeholder="請填寫路名 / 街 / 號 / 樓">
@@ -189,16 +189,21 @@
 							<div class="form-row">
 								<p>入會費用: 500元 (會員費200元，常年會費300元)</p>
 							</div>
+							<div class="form-row two-cols"> 
+								<label><strong>付款方式<span style="color:red;">＊</span></strong></label><br>
+								<label><input type="radio" name="donation_type" value="single"> ATM 轉帳</label>
+								<label><input type="radio" name="donation_type" value="single"> 信用卡</label>
+							  </div>
                         
-							<div class="form-row two-cols">
+							<!-- <div class="form-row two-cols">
 								<label>
 									<input type="checkbox" name="anonymous" value="no"> 
 									<p class="legal">我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</p>
 								</label> 
-							</div>
+							</div> -->
                         
 							<div class="form-row two-cols">
-								<label>
+								<label class="w100">
 									<input type="checkbox" name="anonymous" value="no"> 
 									<p class="legal">我同意會員（會員代表）有表決權、選舉權、被選舉權與罷免權。每一會員（會員代表）為一權。</p>
 								</label> 
@@ -254,11 +259,11 @@
 								<label>聯絡地址 <span>*</span></label>
 								<div class="three-cols">
 									<!-- 縣市選單 -->
-									<select id="city" name="city" required>
+									<select id="city" class="city" name="city" required>
 										<option value="" disabled selected hidden>請選擇縣市</option>
 									</select>
 									<!-- 鄉鎮市區選單 -->
-									<select id="district" name="district" required>
+									<select id="district" class="district" name="district" required>
 										<option value="" disabled selected hidden>請先選擇縣市</option>
 									</select>
 									<input type="text" placeholder="請填寫路名 / 街 / 號 / 樓">
@@ -300,12 +305,23 @@
 							  </div>
 							
 							
-							  <div class="form-row two-cols">
+							<!-- <div class="form-row two-cols">
 								<div>
 									<label>團體會員推(選)派代表</label>
 								</div>
-							</div>
+							</div> -->
 							
+							<div class="form-row two-cols">
+								<div>
+									<label>收據抬頭 <span>*</span></label>
+									<input type="invoice" placeholder="請填寫收據抬頭" required>
+								</div>
+								<div>
+									<label>統編</label>
+									<input type="taxid" placeholder="請填寫統編">
+								</div>
+							</div>
+
 							<div class="form-row three-cols">
 								<div>
 									<label>姓名 <span>*</span></label>
@@ -335,28 +351,40 @@
 									<input type="text" placeholder="請填寫您的真實身分證字號 / 居留證號" required>
 								</div>
 							</div>
-							
-							
+
 							<div class="form-row">
-								<div>
-									<label>聯絡地址 <span>*</span></label>
-									<input type="address" placeholder="請填寫地址">
+								<label>聯絡地址 <span>*</span></label>
+								<div class="three-cols">
+									<!-- 縣市選單 -->
+									<select id="city" class="city" name="city" required>
+										<option value="" disabled selected hidden>請選擇縣市</option>
+									</select>
+									<!-- 鄉鎮市區選單 -->
+									<select id="district" class="district" name="district" required>
+										<option value="" disabled selected hidden>請先選擇縣市</option>
+									</select>
+									<input type="text" placeholder="請填寫路名 / 街 / 號 / 樓">
 								</div>
 							</div>
 
 							<div class="form-row">
 								<p>入會費用: 2000元 (會員費1000元，常年會費1000元)</p>
 							</div>
+							<div class="form-row two-cols"> 
+								<label><strong>付款方式<span style="color:red;">＊</span></strong></label><br>
+								<label><input type="radio" name="donation_type" value="single"> ATM 轉帳</label>
+								<label><input type="radio" name="donation_type" value="single"> 信用卡</label>
+							</div>
 
-							<div class="form-row two-cols">
+							<!-- <div class="form-row two-cols">
 								<label>
 									<input type="checkbox" name="anonymous" value="no"> 
 									<p class="legal">我同意上述個人資料，本會僅作為寄發活動通知、收據、雜誌、編印特刊或網站會員管理時所用，依「個人資料保護法」規定，不會移作其他用途。</p>
 								</label> 
-							</div>
+							</div> -->
                         
 							<div class="form-row two-cols">
-								<label>
+								<label class="w100">
 									<input type="checkbox" name="anonymous" value="no"> 
 									<p class="legal">我同意會員（會員代表）有表決權、選舉權、被選舉權與罷免權。每一會員（會員代表）為一權。</p>
 								</label> 
@@ -393,50 +421,54 @@
 		});
 	})
 
+	// 以下0518修改
 	// 縣市選取 
-	let citySelect = document.getElementById("city");
-	let districtSelect = document.getElementById("district");
+	let citySelects = document.querySelectorAll(".city");
+	let districtSelects = document.querySelectorAll(".district");
 	let cityData = {};
   
 	// 載入 JSON 資料
 	fetch("js/tw_city_districts.json")
-	  .then(res => res.json())
-	  .then(data => {
+	.then(res => res.json())
+	.then(data => {
 		cityData = data;
-  
-		// 將縣市填入 city select
+
+		citySelects.forEach((citySelect, index) => {
+		// 填入縣市
 		for (let city in data) {
-		  let opt = document.createElement("option");
-		  opt.value = city;
-		  opt.textContent = city;
-		  citySelect.appendChild(opt);
+			let opt = document.createElement("option");
+			opt.value = city;
+			opt.textContent = city;
+			citySelect.appendChild(opt);
 		}
-	  });
-  
-	// 當縣市選擇改變，更新區域選單
-	citySelect.addEventListener("change", function () {
-	  let selectedCity = this.value;
-	  let districts = cityData[selectedCity] || [];
-  
-	  // 清除舊選項
-	  districtSelect.innerHTML = '<option value="">請選擇</option>';
-  
-	  districts.forEach(function (d) {
-		let opt = document.createElement("option");
-		opt.value = d;
-		opt.textContent = d;
-		districtSelect.appendChild(opt);
-	  });
+
+		// 綁定 change 事件
+		citySelect.addEventListener("change", function () {
+			let selectedCity = this.value;
+			let districts = cityData[selectedCity] || [];
+			let districtSelect = districtSelects[index];
+
+			// 清空舊選項
+			districtSelect.innerHTML = '<option value="">請選擇</option>';
+
+			districts.forEach(function (d) {
+			let opt = document.createElement("option");
+			opt.value = d;
+			opt.textContent = d;
+			districtSelect.appendChild(opt);
+			});
+		});
+		});
 	});
 
-	//tab 切換
+	// tab 切換 (這段無需改動)
 	window.addEventListener('DOMContentLoaded', () => {
 		const hash = window.location.hash;
 		if (hash) {
-		const targetTab = document.querySelector(`input[type="radio"]${hash}`);
-		if (targetTab) {
+			const targetTab = document.querySelector(`input[type="radio"]${hash}`);
+			if (targetTab) {
 			targetTab.checked = true;
-		}
+			}
 		}
 	});
   </script>

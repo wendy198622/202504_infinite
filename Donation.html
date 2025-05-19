@@ -159,12 +159,13 @@
                             <label><input type="radio" name="reciept" value="yes"> 是，可扣抵稅額</label>
                             <label><input type="radio" name="reciept" value="no"> 否，簡化捐款步驟，但無法扣抵稅額</label>
                         </div> -->
-                        
+
+                        <!-- 0518修改 -->                        
                         <div class="form-row two-cols">
                             <div>
-                                <label>抬頭 <span>*</span></label>
+                                <label>收據抬頭 <span>*</span></label>
                                 <div class="group">
-                                    <input type="phone" placeholder="0910123456" required>
+                                    <input type="invoice" placeholder="請填寫收據抬頭" required>
                                     <input type="radio" name="reciept" value="yes">同捐款人
                                 </div>
                             </div>
@@ -173,9 +174,10 @@
                         <div class="form-row two-cols">
                             <div>
                                 <label>統編</label>
-                                <input type="tel" placeholder="02-00000000#123" required>
+                                <input type="tel" placeholder="請填寫統編" required>
                             </div>                      
                         </div>
+                        <!-- 0518修改 end-->
 
                         <div class="form-row two-cols"> 
                             <label>公益捐款類別<span style="color:red;">＊</span></label>
@@ -190,14 +192,14 @@
                         </div>
                         
                         <div class="form-row two-cols">
-                            <label>
+                            <label class="w100">
                                 <input type="checkbox" name="anonymous" value="no"> 
                                 <p class="legal">我不同意將全名公開於捐款與受助者芳名錄<span class="note">※ 本會依財團法人法第25條規定，應公開捐款人姓名及金額，如您不同意公開請勾選上述選項，芳名錄將以「無名氏」、「網路無名氏」呈現。</span></p>
                             </label> 
                         </div>
                         
                         <div class="form-row two-cols">
-                            <label>
+                            <label class="w100">
                                 <input type="checkbox" name="anonymous" value="no"> 
                                 <p class="legal">我已詳閱個人資料運用告知聲明，請閱讀我們的<a href="#" target="_blank">個人資料運用告知聲明</a></p>
                             </label> 

@@ -152,17 +152,28 @@
             h3{
                 margin: 0 auto 40px;
             }
+              
             label {
-                width: 100%;
                 display: flex;
+                // max-width: 100%;
                 // flex-wrap: wrap;
                 // align-items: center;
                 font-weight: normal;
                 margin-bottom: 5px;
                 letter-spacing: 1px;
-            
+
+                &.w100{
+                    width: 100%;
+                }
+          
                 span {
-                    color: red;
+                  color: red;
+                }
+                span.note{
+                    display: flex;
+                    font-size: 12px;
+                    // margin-left: 20px;
+                    color: #717171;
                 }
                 a{
                     text-decoration: underline;
@@ -177,6 +188,7 @@
             input[type="department"],
             input[type="position"],
             input[type="address"],
+            input[type="invoice"],
             select,
             textarea {
                 width: 100%;
@@ -222,52 +234,58 @@
                 font-weight: 300;
             }
             
+            
             .form-row {
+                width: 100%;
                 margin-bottom: 20px;
-                display: flex;
-                flex-wrap: wrap;
             }
-            
+          
             .two-cols {
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                @media (max-width: 600px){
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                & > div {
-                    flex: 1;
-                    @media (max-width: 600px){
-                        width: 100%;
-                    }
-                    .group {
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        input[type="phone"]{
-                            width: calc(100% - 120px);
-                        }
-                        input[type="radio"]{
-                            margin-left: 20px;
-                            vertical-align: middle;
-                        }
-                    }
-                    
-                }
-            }
-
-            .three-cols {
-                display: flex;
-                gap: 10px;
+              display: flex;
+              gap: 20px;
+              @media (max-width: 600px){
+                  flex-direction: column;
+                  align-items: flex-start;
+              }
             }
             
-            .three-cols select {
-                width: 30%;
+            .two-cols > div {
+              flex: 1;
+              @media (max-width: 600px){
+                  width: 100%;
+              }
+
+                .group{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+                    >input[type="invoice"]{
+                        width: calc(100% - 120px);
+                        margin-right: 20px;
+                    }
+                }
+            }
+            
+            .three-cols {
+              display: flex;
+              justify-content: space-between;
+              gap: 20px;
+              @media (max-width: 600px){
+                  flex-wrap: wrap;
+              }
+            }
+            
+            .three-cols > select, .three-cols > div {
+                width: calc((100% - 40px) / 3);
+              @media (max-width: 600px){
+                  width: calc((100% - 20px) / 2);
+              }
             }
             
             .three-cols input {
-                flex: 1;
-            }    
+              flex: 1;
+            }  
         }
     }
 

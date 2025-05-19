@@ -1235,7 +1235,6 @@ footer .copyright {
 }
 
 .donate_content .content_form .donate_form label {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1244,8 +1243,20 @@ footer .copyright {
   letter-spacing: 1px;
 }
 
+.donate_content .content_form .donate_form label.w100 {
+  width: 100%;
+}
+
 .donate_content .content_form .donate_form label span {
   color: red;
+}
+
+.donate_content .content_form .donate_form label span.note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #717171;
 }
 
 .donate_content .content_form .donate_form label a {
@@ -1261,6 +1272,7 @@ footer .copyright {
 .donate_content .content_form .donate_form input[type="department"],
 .donate_content .content_form .donate_form input[type="position"],
 .donate_content .content_form .donate_form input[type="address"],
+.donate_content .content_form .donate_form input[type="invoice"],
 .donate_content .content_form .donate_form select,
 .donate_content .content_form .donate_form textarea {
   width: 100%;
@@ -1331,12 +1343,8 @@ footer .copyright {
 }
 
 .donate_content .content_form .donate_form .form-row {
+  width: 100%;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .donate_content .content_form .donate_form .two-cols {
@@ -1344,9 +1352,6 @@ footer .copyright {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -1374,32 +1379,46 @@ footer .copyright {
 }
 
 .donate_content .content_form .donate_form .two-cols > div .group {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.donate_content .content_form .donate_form .two-cols > div .group input[type="phone"] {
+.donate_content .content_form .donate_form .two-cols > div .group > input[type="invoice"] {
   width: calc(100% - 120px);
-}
-
-.donate_content .content_form .donate_form .two-cols > div .group input[type="radio"] {
-  margin-left: 20px;
-  vertical-align: middle;
+  margin-right: 20px;
 }
 
 .donate_content .content_form .donate_form .three-cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
 }
 
-.donate_content .content_form .donate_form .three-cols select {
-  width: 30%;
+@media (max-width: 600px) {
+  .donate_content .content_form .donate_form .three-cols {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.donate_content .content_form .donate_form .three-cols > select, .donate_content .content_form .donate_form .three-cols > div {
+  width: calc((100% - 40px) / 3);
+}
+
+@media (max-width: 600px) {
+  .donate_content .content_form .donate_form .three-cols > select, .donate_content .content_form .donate_form .three-cols > div {
+    width: calc((100% - 20px) / 2);
+  }
 }
 
 .donate_content .content_form .donate_form .three-cols input {
