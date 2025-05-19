@@ -175,6 +175,23 @@
 								<label><input type="radio" name="payment_method" value="yes"> 同意</label>
 								<label><input type="radio" name="payment_method" value="no"> 不同意</label>                        
 							</div> -->
+
+
+							<div class="form-row two-cols"> 
+								<label><strong>收據寄送方式：電子收據</strong></label><br>
+								<!-- <label><input type="radio" name="donation_type" value="single" checked> 電子收據</label> -->
+							  </div>
+							
+							<div class="form-row two-cols">
+								<div>
+									<label>收據抬頭 <span>*</span></label>
+									<input type="invoice" placeholder="請填寫收據抬頭" required>
+								</div>
+								<div>
+									<label>統編</label>
+									<input type="taxid" placeholder="請填寫統編">
+								</div>
+							</div>
 							<div class="form-row">
 								<p>入會費用: 500元 (會員費200元，常年會費300元)</p>
 							</div>
@@ -289,16 +306,9 @@
 							</div>
 
 							<div class="form-row two-cols"> 
-								<label><strong>收據寄送方式<span style="color:red;">＊</span></strong></label><br>
-								<label><input type="radio" name="donation_type" value="single" checked> 電子收據</label>
+								<label><strong>收據寄送方式：電子收據</strong></label><br>
+								<!-- <label><input type="radio" name="donation_type" value="single" checked> 電子收據</label> -->
 							  </div>
-							
-							
-							<!-- <div class="form-row two-cols">
-								<div>
-									<label>團體會員推(選)派代表</label>
-								</div>
-							</div> -->
 							
 							<div class="form-row two-cols">
 								<div>
@@ -308,51 +318,6 @@
 								<div>
 									<label>統編</label>
 									<input type="taxid" placeholder="請填寫統編">
-								</div>
-							</div>
-
-							<div class="form-row three-cols">
-								<div>
-									<label>姓名 <span>*</span></label>
-									<input type="text" placeholder="請填寫您的真實名字" required>
-								</div>
-								<div>
-									<label>職稱</label>
-									<input type="position" placeholder="">
-								</div>
-								<div>
-									<label>性別 <span>*</span></label>
-									<select required>
-										<option value="" disabled selected hidden>請選擇</option>
-										<option value="">男性</option>
-										<option value="">女性</option>
-									</select>
-								</div>
-							</div>
-							
-							<div class="form-row two-cols">
-								<div>
-									<label>出生年月日 <span>*</span></label>
-									<input type="date" required>
-								</div>
-								<div>
-									<label>身份證字號 / 居留證號 <span>*</span></label>
-									<input type="text" placeholder="請填寫您的真實身分證字號 / 居留證號" required>
-								</div>
-							</div>
-
-							<div class="form-row">
-								<label>聯絡地址 <span>*</span></label>
-								<div class="three-cols">
-									<!-- 縣市選單 -->
-									<select id="city" class="city" name="city" required>
-										<option value="" disabled selected hidden>請選擇縣市</option>
-									</select>
-									<!-- 鄉鎮市區選單 -->
-									<select id="district" class="district" name="district" required>
-										<option value="" disabled selected hidden>請先選擇縣市</option>
-									</select>
-									<input type="text" placeholder="請填寫路名 / 街 / 號 / 樓">
 								</div>
 							</div>
 
