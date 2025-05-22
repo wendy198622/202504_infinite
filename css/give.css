@@ -1765,4 +1765,8 @@ footer .copyright {
 .application_content .content_form .tab-content .inquiry-form button:hover, .application_content .content_form .tab-content .cooperate-form button:hover {
   opacity: 0.85;
 }
+
+.mt40 {
+  margin-top: 40px;
+}
 /*# sourceMappingURL=give.css.map */
