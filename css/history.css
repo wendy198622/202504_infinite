@@ -346,6 +346,24 @@ p {
   color: #fff;
 }
 
+.success {
+  margin-top: 88px;
+  background-color: #f6f6f6 !important;
+  min-height: calc(100vh - 400px);
+}
+
+@media (max-width: 800px) {
+  .success {
+    margin-top: 72px;
+  }
+}
+
+.success .success_form {
+  width: 96%;
+  max-width: 800px;
+  padding-top: 20px;
+}
+
 header {
   width: 100%;
   position: fixed;

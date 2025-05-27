@@ -176,9 +176,12 @@
     }
 }
 .charitypage_top{
-    margin-top: 92px;
+    margin-top: 88px;
     padding: 80px 0 100px;
     background: #f4f5f6;
+    @media (max-width: 800px) {
+        margin-top: 72px;
+    }
     .content_intro{
         display: flex;
         gap: 40px;
