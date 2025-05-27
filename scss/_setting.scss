@@ -306,4 +306,25 @@ p{
         max-width: 800px;
         padding-top: 20px;
     }
+
+    .sans, .sans p, .sans a{
+        font-size: 16px;
+        font-family: $_font-sans !important;
+    }
+    .sans a{
+        display: inline-block;
+        text-decoration: underline;
+    }
+    
+    .link{
+        margin-top: 60px;
+        background: $linear-color;
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 4px;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
 }

@@ -364,6 +364,29 @@ p {
   padding-top: 20px;
 }
 
+.success .sans, .success .sans p, .success .sans a {
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif !important;
+}
+
+.success .sans a {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.success .link {
+  margin-top: 60px;
+  background: linear-gradient(170deg, #E7275A, #F8B01E);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.success .link a {
+  text-decoration: none;
+  color: #fff;
+}
+
 header {
   width: 100%;
   position: fixed;

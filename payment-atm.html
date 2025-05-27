@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>愛無限公益慈善發展協會</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/support.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	
+	<header id="header"></header>
+
+	<section>
+		<div class="donate_content success">
+			<div class="container">
+                <div class="success_form sans">
+                    <h3>ATM 付款訊息</h3>
+                    <p>請您留意 Email(如未收到 mail 請檢查垃圾信箱)或簡訊通知</p>
+
+                    <p>訂單編號：B202502270003<br>
+                        訂單金額：$ 200<br>
+                        <br>
+                        前往查看 ATM 帳號（ <a href="https://cocs.4128888card.com.tw/cvs/Auth/x/xQ22PsA9h" target="_blank">https://cocs.4128888card.com.tw/cvs/Auth/x/xQ22PsA9h</a>）
+                    </p>
+                    <div class="link">
+                        <a href="index.html">回首頁</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		
+		new WOW().init();
+
+		$(".imgLiquidFill").imgLiquid({fill:true});
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+			} else {
+				$("#header").removeClass("fixed");
+			}
+		});
+	})
+
+  </script>
+</html>
