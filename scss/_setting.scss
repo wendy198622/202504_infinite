@@ -314,6 +314,9 @@ p{
     .sans a{
         display: inline-block;
         text-decoration: underline;
+        max-width: 100%;
+        word-break: break-all;
+        overflow-wrap: break-word;
     }
     
     .link{
@@ -322,9 +325,14 @@ p{
         display: inline-block;
         padding: 4px 10px;
         border-radius: 4px;
+        word-break: break-all;
         a{
             text-decoration: none;
             color: #fff;
+            @media (max-width: 600px) {
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
         }
     }
 }
