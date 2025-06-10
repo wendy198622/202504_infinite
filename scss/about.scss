@@ -80,104 +80,7 @@
             left: -20px;
             bottom: -4px;
         }
-    }
-    .content_info{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        @media (max-width: 800px){
-            flex-direction: column;
-        }
-
-        .info_photo{
-            position: relative;
-            .name{
-                width: 42%;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-            }
-        }
-
-        .info_feature{
-            ul{
-                max-width: 800px;
-                margin: 0 auto;
-                li{
-                    display: flex;
-                    flex-direction: column;
-                    line-height: 2;
-                    letter-spacing: 1px;
-                    font-family: $_font-sans;
-                    justify-content: space-between;
-                    padding: 12px 0 12px 54px;
-                    position: relative;
-                    &:before{
-                        content: "";
-                        background: url(../img/icon-Founder.svg) center center no-repeat;
-                        background-size: cover;
-                        width: 40px;
-                        height: 40px;
-                        position: absolute;
-                        top: 10px;
-                        left: 0;
-                    }
-                    &:nth-child(1){ margin-left: 0;}
-                    &:nth-child(2){ margin-left: 42px;}
-                    &:nth-child(3){ margin-left: 64px;}
-                    &:nth-child(4){ margin-left: 32px;}
-                    @media (max-width: 800px){
-                        &:nth-child(1){ margin-left: 0;}
-                        &:nth-child(2){ margin-left: 0;}
-                        &:nth-child(3){ margin-left: 0;}
-                        &:nth-child(4){ margin-left: 0;}
-                    }
-                }
-
-                li + li{
-                    margin-top: 12px;
-                }
-            }
-        }
-    }  
-    .content_intro{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        @media (max-width: 800px){
-            flex-direction: column;
-        }
-
-        .intro_photo{
-            position: relative;
-        }
-
-        .intro_feature{
-            ul{
-                max-width: 800px;
-                margin: 0 auto;
-                li{
-                    display: flex;
-                    flex-direction: column;
-                    line-height: 2;
-                    letter-spacing: 1px;
-                    font-family: $_font-sans;
-                    justify-content: space-between;
-                    padding: 12px 0 12px 54px;
-                    position: relative;
-                    @media (max-width: 800px){
-                        padding: 12px 0;
-                    }
-                }
-
-                li + li{
-                    margin-top: 12px;
-                }
-            }
-        }
-    }   
+    } 
     .content_volunteer{
         .volunteer_video{
             position: relative;
@@ -258,4 +161,105 @@
               }
         }
     }
+     
+    .content_info{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media (max-width: 800px){
+            flex-direction: column;
+        }
+
+        .intro_photo{
+            width: 55%;
+            position: relative;
+        }
+
+        .intro_feature{
+            width: 45%;
+            .intro_feature_box{
+                max-width: 800px;
+                margin: 0 auto;
+                .item{
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 2;
+                    letter-spacing: 1px;
+                    font-family: $_font-sans;
+                    justify-content: space-between;
+                    padding: 12px 0 12px 54px;
+                    position: relative;
+                    @media (max-width: 800px){
+                        padding: 12px 0;
+                    }
+                }
+
+                .item + .item{
+                    margin-top: 12px;
+                }
+            }
+        }
+    } 
+
+    .content_info{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media (max-width: 800px){
+            flex-direction: column;
+        }
+
+        .info_photo{
+            position: relative;
+            .name{
+                width: 42%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .info_feature{
+            .info_feature-box{
+                max-width: 800px;
+                margin: 0 auto;
+                .item{
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 2;
+                    letter-spacing: 1px;
+                    font-family: $_font-sans;
+                    justify-content: space-between;
+                    padding: 12px 0 12px 54px;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background: url(../img/icon-Founder.svg) center center no-repeat;
+                        background-size: cover;
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 10px;
+                        left: 0;
+                    }
+                    &:nth-child(1){ margin-left: 0;}
+                    &:nth-child(2){ margin-left: 42px;}
+                    &:nth-child(3){ margin-left: 64px;}
+                    &:nth-child(4){ margin-left: 32px;}
+                    @media (max-width: 800px){
+                        &:nth-child(1){ margin-left: 0;}
+                        &:nth-child(2){ margin-left: 0;}
+                        &:nth-child(3){ margin-left: 0;}
+                        &:nth-child(4){ margin-left: 0;}
+                    }
+                }
+
+                .item + .item{
+                    margin-top: 12px;
+                }
+            }
+        }
+    }  
 }

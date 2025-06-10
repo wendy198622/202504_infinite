@@ -79,10 +79,10 @@
         }
 
         .intro_feature{
-            ul{
+            .intro_feature_box{
                 max-width: 800px;
                 margin: 0 auto;
-                li{
+                .item{
                     display: flex;
                     flex-direction: column;
                     line-height: 2;
@@ -96,7 +96,7 @@
                     }
                 }
 
-                li + li{
+                .item + .item{
                     margin-top: 12px;
                 }
             }
@@ -382,7 +382,7 @@
                 padding: 0;
             }
 
-            .inquiry-form, .cooperate-form {
+            .inquiry-form, .cooperate-form, .renew-form {
                 background: #f4f5f6;
                 padding: 40px;
                 border-radius: 20px;
@@ -530,4 +530,7 @@
 }
 .mt40{
     margin-top: 40px;
+}
+.mt80{
+    margin-top: 80px;
 }

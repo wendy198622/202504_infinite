@@ -921,7 +921,7 @@ footer .content .menu {
 }
 
 footer .content .menu .logo {
-  width: 280px;
+  width: 260px;
 }
 
 @media (max-width: 960px) {
@@ -946,29 +946,29 @@ footer .content .menu .info {
   }
 }
 
-footer .content .menu .info ul {
+footer .content .menu .info .info_box {
   margin-left: 40px;
 }
 
 @media (max-width: 1200px) {
-  footer .content .menu .info ul {
+  footer .content .menu .info .info_box {
     margin-left: 10px;
   }
 }
 
 @media (max-width: 800px) {
-  footer .content .menu .info ul {
+  footer .content .menu .info .info_box {
     margin-left: 0;
   }
 }
 
-footer .content .menu .info ul li {
+footer .content .menu .info .info_box li {
   line-height: 2;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-footer .content .menu .info ul li span {
+footer .content .menu .info .info_box li span {
   font-size: 20px;
   vertical-align: middle;
 }
@@ -1006,16 +1006,16 @@ footer .content .social .terms {
   gap: 16px;
 }
 
-footer .content .social .terms li {
+footer .content .social .terms .item {
   line-height: 1;
   letter-spacing: 1px;
 }
 
-footer .content .social .terms li:last-child {
+footer .content .social .terms .item:last-child {
   padding-right: 0;
 }
 
-footer .content .social .terms li + li {
+footer .content .social .terms .item + .item {
   border-left: 1px solid #3E3A39;
   padding-left: 16px;
 }

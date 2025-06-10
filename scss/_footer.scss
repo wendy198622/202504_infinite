@@ -30,7 +30,7 @@ footer{
                 flex-direction: column;
             }
             .logo{
-                width: 280px;
+                width: 260px;
                 @media (max-width:960px){
                     width: 180px;
                 }
@@ -41,7 +41,7 @@ footer{
                 @media (max-width:800px){
                     flex-direction: column;
                 }
-                ul{
+                .info_box{
                     margin-left: 40px;
                     @media (max-width:1200px){
                         margin-left: 10px;
@@ -80,7 +80,7 @@ footer{
                 display: flex;
                 margin-top: 12px;   
                 gap: 16px; 
-                li{
+                .item{
                     // padding: 0 16px;
                     line-height: 1;
                     letter-spacing: 1px;
@@ -88,7 +88,7 @@ footer{
                         padding-right: 0;
                     }
                 }
-                li + li{
+                .item + .item{
                     border-left: 1px solid $primary-color;
                     padding-left: 16px;
                 }

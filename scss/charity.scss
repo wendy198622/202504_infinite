@@ -93,10 +93,10 @@
 
         .intro_feature{
             
-            ul{
+            .intro_feature_box{
                 max-width: 800px;
                 margin: 20px auto 0;
-                li{
+                .item{
                     display: flex;
                     flex-direction: column;
                     line-height: 2;
@@ -107,7 +107,7 @@
                     position: relative;
                 }
 
-                li + li{
+                .item + .item{
                     margin-top: 12px;
                 }
             }

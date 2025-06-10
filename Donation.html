@@ -43,12 +43,12 @@
 						<img class="photo" src="img/Intro-img.png" alt="">
 					</div>
 					<div class="intro_feature">
-						<ul>
-							<li>
+						<div class="intro_feature_box">
+							<div class="item">
 								<h4>圖文編輯區標題</h4>
 								<p>協會的成立源於一份善心和愛的理念，這也是延續愛無限社會企業一直以來所堅持的價值觀：「在別人的需要上，看見自己的責任」。這份價值觀鼓勵我們將關懷和關注投向在公益慈善上，以慈愛的心對待他人，以善行回饋社會，讓愛和善良成為社會的主旋律，讓社會因我們的付出而變得更美好。</p>
-							</li>
-						</ul>
+							</div>
+						</div>
 					</div>
                 </div>
 			</div>
@@ -78,136 +78,138 @@
 		</div>
 		<div class="donate_content">
 			<div class="container">
-                <div class="content_form">
-                    <form class="donate_form">
-                        <h3>公益捐款</h3>
-                        <div class="form-row two-cols"> 
-                            <label><strong>公益捐款類別<span style="color:red;">＊</span></strong></label>
-                            <label><input type="radio" name="donation_type" value="single"> 單次捐款</label>
-                            <label><input type="radio" name="donation_type" value="recurring"> 定期定額捐款</label>
-                          </div>
-                        
-                        <div class="form-row two-cols">
-                            <label><strong>公益捐款方式<span style="color:red;">＊</span></strong></label>
-                            <label><input type="radio" name="payment_method" value="credit_card"> 信用卡</label>
-                            <label><input type="radio" name="payment_method" value="atm"> ATM</label>                        
-                        </div>
-                        
-                        <div class="form-row two-cols">
-                            <div>
-                                <label>捐款用途 <span>*</span></label>
-                                <select>
-                                    <option value="" disabled selected hidden>請選擇</option>
-                                    <option value="option1">視障公益使用</option>
-                                    <option value="option2">聽障公益使用</option>
-                                    <option value="option3">身障公益使用</option>
-                                    <option value="option4">不指定</option>
-                                </select>
+                <div class="form">
+                    <div class="content_form">
+                        <div class="donate_form">
+                            <h3>公益捐款</h3>
+                            <div class="form-row two-cols"> 
+                                <label><strong>公益捐款類別<span style="color:red;">＊</span></strong></label>
+                                <label><input type="radio" name="donation_type" value="single"> 單次捐款</label>
+                                <label><input type="radio" name="donation_type" value="recurring"> 定期定額捐款</label>
                             </div>
-                            <div>
-                                <label>捐款金額 <span>* 僅阿拉伯數字，請勿含標點符號</span></label>
-                                <input type="text" placeholder="請輸入 100 以上金額 ex:1000">
+                            
+                            <div class="form-row two-cols">
+                                <label><strong>公益捐款方式<span style="color:red;">＊</span></strong></label>
+                                <label><input type="radio" name="payment_method" value="credit_card"> 信用卡</label>
+                                <label><input type="radio" name="payment_method" value="atm"> ATM</label>                        
                             </div>
-                        </div>
-                    </form>	
-                </div>	
-                <div class="content_form">
-                    <form class="donate_form">
-                        <h3>捐款人資料</h3>
-                        <div class="form-row two-cols"> 
-                            <div>
-                                <label>姓名 / 公司行號<span>*</span></label>
-                                <input type="text" placeholder="請填寫您的真實姓名或公司行號">
-                            </div>
-                            <div>
-                                <label>電子信箱</label>
-                                <input type="email" placeholder="example@loveinfinite.com">
-                            </div>
-                          </div>
-                        
-                        <div class="form-row two-cols">
-                            <div>
-                                <label>手機號碼 <span>*</span></label>
-                                <input type="phone" placeholder="0910123456" required>
-                            </div>
-                            <div>
-                                <label>室內電話</label>
-                                <input type="tel" placeholder="02-00000000#123" required>
-                            </div>                      
-                        </div>
-                        <div class="form-row two-cols"> 
-                            <label><strong>我想收到<span style="color:red;">＊</span></strong></label>
-                            <label><input type="checkbox" name="receive_preference" value="email"> 電子文宣</label>
-                            <label><input type="checkbox" name="receive_preference" value="paper"> 紙本刊物</label>
-                            <label><input type="checkbox" name="receive_preference" value="line"> Line 即時通訊</label>
-                            <label><input type="checkbox" name="receive_preference" value="sms"> 簡訊通知</label>
-                        </div>
-                        
-                        <!-- <div class="form-row two-cols">
-                            <label><strong>是否以此資料加入會員<span style="color:red;">＊</span></strong></label>
-                            <label><input type="radio" name="join_membership" value="yes"> 是</label>
-                            <label><input type="radio" name="join_membership" value="no"> 否</label>                         
-                        </div> -->
-                    </form>	
-
-                </div>	
-                <div class="content_form">
-                    <form class="donate_form">
-                        <h3>收據資料</h3>
-                        <!-- <div class="form-row two-cols"> 
-                            <label><strong>是否需要捐款收據<span style="color:red;">＊</span></strong></label>
-                            <label><input type="radio" name="reciept" value="yes"> 是，可扣抵稅額</label>
-                            <label><input type="radio" name="reciept" value="no"> 否，簡化捐款步驟，但無法扣抵稅額</label>
-                        </div> -->
-
-                        <!-- 0518修改 -->                        
-                        <div class="form-row two-cols">
-                            <div>
-                                <label>收據抬頭 <span>*</span></label>
-                                <div class="group">
-                                    <input type="invoice" placeholder="請填寫收據抬頭" required>
-                                    <input type="radio" name="reciept" value="yes">同捐款人
+                            
+                            <div class="form-row two-cols">
+                                <div>
+                                    <label>捐款用途 <span>*</span></label>
+                                    <select>
+                                        <option value="" disabled selected hidden>請選擇</option>
+                                        <option value="option1">視障公益使用</option>
+                                        <option value="option2">聽障公益使用</option>
+                                        <option value="option3">身障公益使用</option>
+                                        <option value="option4">不指定</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>捐款金額 <span>* 僅阿拉伯數字，請勿含標點符號</span></label>
+                                    <input type="text" placeholder="請輸入 100 以上金額 ex:1000">
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="form-row two-cols">
-                            <div>
-                                <label>統編</label>
-                                <input type="tel" placeholder="請填寫統編" required>
-                            </div>                      
-                        </div>
-                        <!-- 0518修改 end-->
+                        </div>	
+                    </div>	
+                    <div class="content_form">
+                        <div class="donate_form">
+                            <h3>捐款人資料</h3>
+                            <div class="form-row two-cols"> 
+                                <div>
+                                    <label>姓名 / 公司行號<span>*</span></label>
+                                    <input type="text" placeholder="請填寫您的真實姓名或公司行號">
+                                </div>
+                                <div>
+                                    <label>電子信箱</label>
+                                    <input type="email" placeholder="example@loveinfinite.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row two-cols">
+                                <div>
+                                    <label>手機號碼 <span>*</span></label>
+                                    <input type="phone" placeholder="0910123456" required>
+                                </div>
+                                <div>
+                                    <label>室內電話</label>
+                                    <input type="tel" placeholder="02-00000000#123" required>
+                                </div>                      
+                            </div>
+                            <div class="form-row two-cols"> 
+                                <label><strong>我想收到<span style="color:red;">＊</span></strong></label>
+                                <label><input type="checkbox" name="receive_preference" value="email"> 電子文宣</label>
+                                <label><input type="checkbox" name="receive_preference" value="paper"> 紙本刊物</label>
+                                <label><input type="checkbox" name="receive_preference" value="line"> Line 即時通訊</label>
+                                <label><input type="checkbox" name="receive_preference" value="sms"> 簡訊通知</label>
+                            </div>
+                            
+                            <!-- <div class="form-row two-cols">
+                                <label><strong>是否以此資料加入會員<span style="color:red;">＊</span></strong></label>
+                                <label><input type="radio" name="join_membership" value="yes"> 是</label>
+                                <label><input type="radio" name="join_membership" value="no"> 否</label>                         
+                            </div> -->
+                        </div>	
 
-                        <div class="form-row two-cols"> 
-                            <label>公益捐款類別<span style="color:red;">＊</span></label>
-                            <label><input type="radio" name="donation_type" value="single"> 單次捐款</label>
-                            <label><input type="radio" name="donation_type" value="recurring"> 定期定額捐款</label>
-                          </div>
-                        
-                        <div class="form-row two-cols">
-                            <label><strong>徵信匿名<span style="color:red;">＊</span></strong></label>
-                            <!-- <label><input type="radio" name="anonymous" value="yes"> 是</label> -->
-                            <!-- <label><input type="radio" name="anonymous" value="no"> 否</label>                          -->
-                        </div>
-                        
-                        <div class="form-row two-cols">
-                            <label class="w100">
-                                <input type="checkbox" name="anonymous" value="no"> 
-                                <p class="legal">我不同意將全名公開於捐款與受助者芳名錄<span class="note">※ 本會依財團法人法第25條規定，應公開捐款人姓名及金額，如您不同意公開請勾選上述選項，芳名錄將以「無名氏」、「網路無名氏」呈現。</span></p>
-                            </label> 
-                        </div>
-                        
-                        <div class="form-row two-cols">
-                            <label class="w100">
-                                <input type="checkbox" name="anonymous" value="no"> 
-                                <p class="legal">我已詳閱個人資料運用告知聲明，請閱讀我們的<a href="#" target="_blank">個人資料運用告知聲明</a></p>
-                            </label> 
-                        </div>
-                    </form>	
+                    </div>	
+                    <div class="content_form">
+                        <div class="donate_form">
+                            <h3>收據資料</h3>
+                            <!-- <div class="form-row two-cols"> 
+                                <label><strong>是否需要捐款收據<span style="color:red;">＊</span></strong></label>
+                                <label><input type="radio" name="reciept" value="yes"> 是，可扣抵稅額</label>
+                                <label><input type="radio" name="reciept" value="no"> 否，簡化捐款步驟，但無法扣抵稅額</label>
+                            </div> -->
 
-                </div>	
-                <button type="submit">確認送出</button>
+                            <!-- 0518修改 -->                        
+                            <div class="form-row two-cols">
+                                <div>
+                                    <label>收據抬頭 <span>*</span></label>
+                                    <div class="group">
+                                        <input type="invoice" placeholder="請填寫收據抬頭" required>
+                                        <input type="radio" name="reciept" value="yes">同捐款人
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row two-cols">
+                                <div>
+                                    <label>統編</label>
+                                    <input type="tel" placeholder="請填寫統編" required>
+                                </div>                      
+                            </div>
+                            <!-- 0518修改 end-->
+
+                            <div class="form-row two-cols"> 
+                                <label>公益捐款類別<span style="color:red;">＊</span></label>
+                                <label><input type="radio" name="donation_type" value="single"> 單次捐款</label>
+                                <label><input type="radio" name="donation_type" value="recurring"> 定期定額捐款</label>
+                            </div>
+                            
+                            <div class="form-row two-cols">
+                                <label><strong>徵信匿名<span style="color:red;">＊</span></strong></label>
+                                <!-- <label><input type="radio" name="anonymous" value="yes"> 是</label> -->
+                                <!-- <label><input type="radio" name="anonymous" value="no"> 否</label>                          -->
+                            </div>
+                            
+                            <div class="form-row two-cols">
+                                <label class="w100">
+                                    <input type="checkbox" name="anonymous" value="no"> 
+                                    <p class="legal">我不同意將全名公開於捐款與受助者芳名錄<span class="note">※ 本會依財團法人法第25條規定，應公開捐款人姓名及金額，如您不同意公開請勾選上述選項，芳名錄將以「無名氏」、「網路無名氏」呈現。</span></p>
+                                </label> 
+                            </div>
+                            
+                            <div class="form-row two-cols">
+                                <label class="w100">
+                                    <input type="checkbox" name="anonymous" value="no"> 
+                                    <p class="legal">我已詳閱個人資料運用告知聲明，請閱讀我們的<a href="#" target="_blank">個人資料運用告知聲明</a></p>
+                                </label> 
+                            </div>
+                        </div>	
+
+                    </div>	
+                    <button type="submit">確認送出</button>
+                </div>
 			</div>
 		</div>
 	</section>

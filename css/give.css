@@ -921,7 +921,7 @@ footer .content .menu {
 }
 
 footer .content .menu .logo {
-  width: 280px;
+  width: 260px;
 }
 
 @media (max-width: 960px) {
@@ -946,29 +946,29 @@ footer .content .menu .info {
   }
 }
 
-footer .content .menu .info ul {
+footer .content .menu .info .info_box {
   margin-left: 40px;
 }
 
 @media (max-width: 1200px) {
-  footer .content .menu .info ul {
+  footer .content .menu .info .info_box {
     margin-left: 10px;
   }
 }
 
 @media (max-width: 800px) {
-  footer .content .menu .info ul {
+  footer .content .menu .info .info_box {
     margin-left: 0;
   }
 }
 
-footer .content .menu .info ul li {
+footer .content .menu .info .info_box li {
   line-height: 2;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-footer .content .menu .info ul li span {
+footer .content .menu .info .info_box li span {
   font-size: 20px;
   vertical-align: middle;
 }
@@ -1006,16 +1006,16 @@ footer .content .social .terms {
   gap: 16px;
 }
 
-footer .content .social .terms li {
+footer .content .social .terms .item {
   line-height: 1;
   letter-spacing: 1px;
 }
 
-footer .content .social .terms li:last-child {
+footer .content .social .terms .item:last-child {
   padding-right: 0;
 }
 
-footer .content .social .terms li + li {
+footer .content .social .terms .item + .item {
   border-left: 1px solid #3E3A39;
   padding-left: 16px;
 }
@@ -1151,12 +1151,12 @@ footer .copyright {
   position: relative;
 }
 
-.give_content .content_intro .intro_feature ul {
+.give_content .content_intro .intro_feature .intro_feature_box {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.give_content .content_intro .intro_feature ul li {
+.give_content .content_intro .intro_feature .intro_feature_box .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1175,12 +1175,12 @@ footer .copyright {
 }
 
 @media (max-width: 800px) {
-  .give_content .content_intro .intro_feature ul li {
+  .give_content .content_intro .intro_feature .intro_feature_box .item {
     padding: 12px 0;
   }
 }
 
-.give_content .content_intro .intro_feature ul li + li {
+.give_content .content_intro .intro_feature .intro_feature_box .item + .item {
   margin-top: 12px;
 }
 
@@ -1602,7 +1602,7 @@ footer .copyright {
   }
 }
 
-.application_content .content_form .tab-content .inquiry-form, .application_content .content_form .tab-content .cooperate-form {
+.application_content .content_form .tab-content .inquiry-form, .application_content .content_form .tab-content .cooperate-form, .application_content .content_form .tab-content .renew-form {
   background: #f4f5f6;
   padding: 40px;
   border-radius: 20px;
@@ -1619,12 +1619,12 @@ footer .copyright {
 }
 
 @media (max-width: 800px) {
-  .application_content .content_form .tab-content .inquiry-form, .application_content .content_form .tab-content .cooperate-form {
+  .application_content .content_form .tab-content .inquiry-form, .application_content .content_form .tab-content .cooperate-form, .application_content .content_form .tab-content .renew-form {
     padding: 40px 20px;
   }
 }
 
-.application_content .content_form .tab-content .inquiry-form label, .application_content .content_form .tab-content .cooperate-form label {
+.application_content .content_form .tab-content .inquiry-form label, .application_content .content_form .tab-content .cooperate-form label, .application_content .content_form .tab-content .renew-form label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1633,15 +1633,15 @@ footer .copyright {
   letter-spacing: 1px;
 }
 
-.application_content .content_form .tab-content .inquiry-form label.w100, .application_content .content_form .tab-content .cooperate-form label.w100 {
+.application_content .content_form .tab-content .inquiry-form label.w100, .application_content .content_form .tab-content .cooperate-form label.w100, .application_content .content_form .tab-content .renew-form label.w100 {
   width: 100%;
 }
 
-.application_content .content_form .tab-content .inquiry-form label span, .application_content .content_form .tab-content .cooperate-form label span {
+.application_content .content_form .tab-content .inquiry-form label span, .application_content .content_form .tab-content .cooperate-form label span, .application_content .content_form .tab-content .renew-form label span {
   color: red;
 }
 
-.application_content .content_form .tab-content .inquiry-form label span.note, .application_content .content_form .tab-content .cooperate-form label span.note {
+.application_content .content_form .tab-content .inquiry-form label span.note, .application_content .content_form .tab-content .cooperate-form label span.note, .application_content .content_form .tab-content .renew-form label span.note {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1673,7 +1673,19 @@ footer .copyright {
 .application_content .content_form .tab-content .cooperate-form input[type="invoice"],
 .application_content .content_form .tab-content .cooperate-form input[type="taxid"],
 .application_content .content_form .tab-content .cooperate-form select,
-.application_content .content_form .tab-content .cooperate-form textarea {
+.application_content .content_form .tab-content .cooperate-form textarea, .application_content .content_form .tab-content .renew-form input[type="text"],
+.application_content .content_form .tab-content .renew-form input[type="tel"],
+.application_content .content_form .tab-content .renew-form input[type="email"],
+.application_content .content_form .tab-content .renew-form input[type="date"],
+.application_content .content_form .tab-content .renew-form input[type="department"],
+.application_content .content_form .tab-content .renew-form input[type="position"],
+.application_content .content_form .tab-content .renew-form input[type="address"],
+.application_content .content_form .tab-content .renew-form input[type="phone"],
+.application_content .content_form .tab-content .renew-form input[type="fax"],
+.application_content .content_form .tab-content .renew-form input[type="invoice"],
+.application_content .content_form .tab-content .renew-form input[type="taxid"],
+.application_content .content_form .tab-content .renew-form select,
+.application_content .content_form .tab-content .renew-form textarea {
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -1683,7 +1695,7 @@ footer .copyright {
           box-sizing: border-box;
 }
 
-.application_content .content_form .tab-content .inquiry-form input[type="radio"], .application_content .content_form .tab-content .inquiry-form input[type="checkbox"], .application_content .content_form .tab-content .cooperate-form input[type="radio"], .application_content .content_form .tab-content .cooperate-form input[type="checkbox"] {
+.application_content .content_form .tab-content .inquiry-form input[type="radio"], .application_content .content_form .tab-content .inquiry-form input[type="checkbox"], .application_content .content_form .tab-content .cooperate-form input[type="radio"], .application_content .content_form .tab-content .cooperate-form input[type="checkbox"], .application_content .content_form .tab-content .renew-form input[type="radio"], .application_content .content_form .tab-content .renew-form input[type="checkbox"] {
   display: inline-block;
   border: 1px solid #000;
   padding: 0;
@@ -1692,50 +1704,50 @@ footer .copyright {
   margin-right: 8px;
 }
 
-.application_content .content_form .tab-content .inquiry-form input[type="radio"]:checked, .application_content .content_form .tab-content .inquiry-form input[type="checkbox"]:checked, .application_content .content_form .tab-content .cooperate-form input[type="radio"]:checked, .application_content .content_form .tab-content .cooperate-form input[type="checkbox"]:checked {
+.application_content .content_form .tab-content .inquiry-form input[type="radio"]:checked, .application_content .content_form .tab-content .inquiry-form input[type="checkbox"]:checked, .application_content .content_form .tab-content .cooperate-form input[type="radio"]:checked, .application_content .content_form .tab-content .cooperate-form input[type="checkbox"]:checked, .application_content .content_form .tab-content .renew-form input[type="radio"]:checked, .application_content .content_form .tab-content .renew-form input[type="checkbox"]:checked {
   background: url(../img/check.svg) center center no-repeat;
   background-size: contain;
 }
 
-.application_content .content_form .tab-content .inquiry-form textarea, .application_content .content_form .tab-content .cooperate-form textarea {
+.application_content .content_form .tab-content .inquiry-form textarea, .application_content .content_form .tab-content .cooperate-form textarea, .application_content .content_form .tab-content .renew-form textarea {
   resize: vertical;
 }
 
-.application_content .content_form .tab-content .inquiry-form p.legal, .application_content .content_form .tab-content .cooperate-form p.legal {
+.application_content .content_form .tab-content .inquiry-form p.legal, .application_content .content_form .tab-content .cooperate-form p.legal, .application_content .content_form .tab-content .renew-form p.legal {
   width: calc(100% - 30px);
   margin-top: 0;
 }
 
-.application_content .content_form .tab-content .inquiry-form ::-webkit-input-placeholder, .application_content .content_form .tab-content .cooperate-form ::-webkit-input-placeholder {
+.application_content .content_form .tab-content .inquiry-form ::-webkit-input-placeholder, .application_content .content_form .tab-content .cooperate-form ::-webkit-input-placeholder, .application_content .content_form .tab-content .renew-form ::-webkit-input-placeholder {
   color: #a8a8a8;
   letter-spacing: 1px;
   font-weight: 300;
 }
 
-.application_content .content_form .tab-content .inquiry-form :-ms-input-placeholder, .application_content .content_form .tab-content .cooperate-form :-ms-input-placeholder {
+.application_content .content_form .tab-content .inquiry-form :-ms-input-placeholder, .application_content .content_form .tab-content .cooperate-form :-ms-input-placeholder, .application_content .content_form .tab-content .renew-form :-ms-input-placeholder {
   color: #a8a8a8;
   letter-spacing: 1px;
   font-weight: 300;
 }
 
-.application_content .content_form .tab-content .inquiry-form ::-ms-input-placeholder, .application_content .content_form .tab-content .cooperate-form ::-ms-input-placeholder {
+.application_content .content_form .tab-content .inquiry-form ::-ms-input-placeholder, .application_content .content_form .tab-content .cooperate-form ::-ms-input-placeholder, .application_content .content_form .tab-content .renew-form ::-ms-input-placeholder {
   color: #a8a8a8;
   letter-spacing: 1px;
   font-weight: 300;
 }
 
-.application_content .content_form .tab-content .inquiry-form ::placeholder, .application_content .content_form .tab-content .cooperate-form ::placeholder {
+.application_content .content_form .tab-content .inquiry-form ::placeholder, .application_content .content_form .tab-content .cooperate-form ::placeholder, .application_content .content_form .tab-content .renew-form ::placeholder {
   color: #a8a8a8;
   letter-spacing: 1px;
   font-weight: 300;
 }
 
-.application_content .content_form .tab-content .inquiry-form .form-row, .application_content .content_form .tab-content .cooperate-form .form-row {
+.application_content .content_form .tab-content .inquiry-form .form-row, .application_content .content_form .tab-content .cooperate-form .form-row, .application_content .content_form .tab-content .renew-form .form-row {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.application_content .content_form .tab-content .inquiry-form .two-cols, .application_content .content_form .tab-content .cooperate-form .two-cols {
+.application_content .content_form .tab-content .inquiry-form .two-cols, .application_content .content_form .tab-content .cooperate-form .two-cols, .application_content .content_form .tab-content .renew-form .two-cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1743,7 +1755,7 @@ footer .copyright {
 }
 
 @media (max-width: 600px) {
-  .application_content .content_form .tab-content .inquiry-form .two-cols, .application_content .content_form .tab-content .cooperate-form .two-cols {
+  .application_content .content_form .tab-content .inquiry-form .two-cols, .application_content .content_form .tab-content .cooperate-form .two-cols, .application_content .content_form .tab-content .renew-form .two-cols {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1754,19 +1766,19 @@ footer .copyright {
   }
 }
 
-.application_content .content_form .tab-content .inquiry-form .two-cols > div, .application_content .content_form .tab-content .cooperate-form .two-cols > div {
+.application_content .content_form .tab-content .inquiry-form .two-cols > div, .application_content .content_form .tab-content .cooperate-form .two-cols > div, .application_content .content_form .tab-content .renew-form .two-cols > div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
 @media (max-width: 600px) {
-  .application_content .content_form .tab-content .inquiry-form .two-cols > div, .application_content .content_form .tab-content .cooperate-form .two-cols > div {
+  .application_content .content_form .tab-content .inquiry-form .two-cols > div, .application_content .content_form .tab-content .cooperate-form .two-cols > div, .application_content .content_form .tab-content .renew-form .two-cols > div {
     width: 100%;
   }
 }
 
-.application_content .content_form .tab-content .inquiry-form .three-cols, .application_content .content_form .tab-content .cooperate-form .three-cols {
+.application_content .content_form .tab-content .inquiry-form .three-cols, .application_content .content_form .tab-content .cooperate-form .three-cols, .application_content .content_form .tab-content .renew-form .three-cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1777,29 +1789,29 @@ footer .copyright {
 }
 
 @media (max-width: 600px) {
-  .application_content .content_form .tab-content .inquiry-form .three-cols, .application_content .content_form .tab-content .cooperate-form .three-cols {
+  .application_content .content_form .tab-content .inquiry-form .three-cols, .application_content .content_form .tab-content .cooperate-form .three-cols, .application_content .content_form .tab-content .renew-form .three-cols {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.application_content .content_form .tab-content .inquiry-form .three-cols > select, .application_content .content_form .tab-content .inquiry-form .three-cols > div, .application_content .content_form .tab-content .cooperate-form .three-cols > select, .application_content .content_form .tab-content .cooperate-form .three-cols > div {
+.application_content .content_form .tab-content .inquiry-form .three-cols > select, .application_content .content_form .tab-content .inquiry-form .three-cols > div, .application_content .content_form .tab-content .cooperate-form .three-cols > select, .application_content .content_form .tab-content .cooperate-form .three-cols > div, .application_content .content_form .tab-content .renew-form .three-cols > select, .application_content .content_form .tab-content .renew-form .three-cols > div {
   width: calc((100% - 40px) / 3);
 }
 
 @media (max-width: 600px) {
-  .application_content .content_form .tab-content .inquiry-form .three-cols > select, .application_content .content_form .tab-content .inquiry-form .three-cols > div, .application_content .content_form .tab-content .cooperate-form .three-cols > select, .application_content .content_form .tab-content .cooperate-form .three-cols > div {
+  .application_content .content_form .tab-content .inquiry-form .three-cols > select, .application_content .content_form .tab-content .inquiry-form .three-cols > div, .application_content .content_form .tab-content .cooperate-form .three-cols > select, .application_content .content_form .tab-content .cooperate-form .three-cols > div, .application_content .content_form .tab-content .renew-form .three-cols > select, .application_content .content_form .tab-content .renew-form .three-cols > div {
     width: calc((100% - 20px) / 2);
   }
 }
 
-.application_content .content_form .tab-content .inquiry-form .three-cols input, .application_content .content_form .tab-content .cooperate-form .three-cols input {
+.application_content .content_form .tab-content .inquiry-form .three-cols input, .application_content .content_form .tab-content .cooperate-form .three-cols input, .application_content .content_form .tab-content .renew-form .three-cols input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.application_content .content_form .tab-content .inquiry-form button, .application_content .content_form .tab-content .cooperate-form button {
+.application_content .content_form .tab-content .inquiry-form button, .application_content .content_form .tab-content .cooperate-form button, .application_content .content_form .tab-content .renew-form button {
   width: 200px;
   background: linear-gradient(170deg, #E7275A, #F8B01E);
   color: white;
@@ -1814,11 +1826,15 @@ footer .copyright {
   margin-top: 32px;
 }
 
-.application_content .content_form .tab-content .inquiry-form button:hover, .application_content .content_form .tab-content .cooperate-form button:hover {
+.application_content .content_form .tab-content .inquiry-form button:hover, .application_content .content_form .tab-content .cooperate-form button:hover, .application_content .content_form .tab-content .renew-form button:hover {
   opacity: 0.85;
 }
 
 .mt40 {
   margin-top: 40px;
+}
+
+.mt80 {
+  margin-top: 80px;
 }
 /*# sourceMappingURL=give.css.map */

@@ -46,6 +46,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     .content_title{
         font-size: 32px;
@@ -74,10 +79,10 @@
         }
 
         .intro_feature{
-            ul{
+            .intro_feature_box{
                 max-width: 800px;
                 margin: 0 auto;
-                li{
+                .item{
                     display: flex;
                     flex-direction: column;
                     line-height: 2;
@@ -91,7 +96,7 @@
                     }
                 }
 
-                li + li{
+                .item + .item{
                     margin-top: 12px;
                 }
             }
@@ -291,6 +296,10 @@
 
 
     button{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
         background: $linear-color;
         color: white;
         border: none;
@@ -304,5 +313,5 @@
         &:hover {
             opacity: 0.85;
           }
-      }
+    }
 }
