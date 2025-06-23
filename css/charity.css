@@ -1438,6 +1438,7 @@ footer .copyright {
 }
 
 .charitypage_top .modal-content {
+  width: 800px;
   max-width: 100%;
   max-height: 90vh;
   background: white;
@@ -1461,7 +1462,6 @@ footer .copyright {
 }
 
 .charitypage_top .album-grid img {
-  width: 220px;
   border-radius: 4px;
 }
 
@@ -1538,5 +1538,17 @@ footer .copyright {
   .charitypage_content .style3 .photo .item {
     width: 100%;
   }
+}
+
+.album-grid {
+  width: 100%;
+  height: auto;
+}
+
+.album-grid img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=charity.css.map */

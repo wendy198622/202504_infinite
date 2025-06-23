@@ -279,6 +279,7 @@
       }
       
       .modal-content {
+        width: 800px;
         max-width: 100%;
         max-height: 90vh;
         background: white;
@@ -298,7 +299,8 @@
       
       .album-grid img {
         // width: calc((100% - 40px) / 5);
-        width: 220px;
+        // width: 220px;
+        // width: 80%;
         border-radius: 4px;
       }
       
@@ -357,4 +359,15 @@
             }
         }
     }
+}
+
+.album-grid {
+  width: 100%;
+  height: auto;
+}
+
+.album-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
