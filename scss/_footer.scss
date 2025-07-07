@@ -37,7 +37,7 @@ footer{
             }
             .info{
                 display: flex;
-                margin-top: 20px;
+                // margin-top: 20px;
                 @media (max-width:800px){
                     flex-direction: column;
                 }
@@ -49,10 +49,11 @@ footer{
                     @media (max-width:800px){
                         margin-left: 0;
                     }
-                    li{
+                    .item{
                         line-height: 2;
                         font-size: 14px;
                         letter-spacing: 1px;
+                        vertical-align: middle;
                         span{
                             font-size: 20px;
                             vertical-align: middle;

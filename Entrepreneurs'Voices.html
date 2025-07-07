@@ -43,6 +43,7 @@
 					<h3>企業家之聲</h3>
 				</div>
 				<div class="content_entrepreneur">
+					<!-- 0630修改 -->
 					<div class="entrepreneur_story swiper swiper-container-story">
 						<ul class="swiper-wrapper">
 							<!-- Slides -->
@@ -51,30 +52,35 @@
 									<img src="img/volunteer_story-img.png" alt="">
 								</div>
 								<h4>企業家 XXX111</h4>
-								<p>當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+								<p class="volunteer-story collapsed">當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+								<div class="show-more">more</div>
 							</li>
 							<li class="swiper-slide">
 								<div class="photo">
 									<img src="img/volunteer_story-img.png" alt="">
 								</div>
 								<h4>企業家 XXX222</h4>
-								<p>當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+								<p class="volunteer-story collapsed">當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+								<div class="show-more">more</div>
 							</li>
 							<li class="swiper-slide">
 								<div class="photo">
 									<img src="img/volunteer_story-img.png" alt="">
 								</div>
 								<h4>企業家 XXX333</h4>
-								<p>當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+								<p class="volunteer-story collapsed">當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+								<div class="show-more">more</div>
 							</li>
 							<li class="swiper-slide">
 								<div class="photo">
 									<img src="img/volunteer_story-img.png" alt="">
 								</div>
 								<h4>企業家 XXX444</h4>
-								<p>當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+								<p class="volunteer-story collapsed">當我們看見視障者，不是看見他們缺少視力，而是看見他們如何用感知、聲音、觸覺，去描繪世界。他們讓我們明白，「看見」不只是眼睛的功能，更是一種心靈的感受與理解力。</p>
+								<div class="show-more">more</div>
 							</li>
 						</ul>
+						<!-- 0630修改 end -->
 						<div class="swiper-pagination"></div>
 					</div>
                 </div>
@@ -103,6 +109,20 @@
 			}
 		});
 		
+		// 0630修改
+		$('.swiper-slide').each(function () {
+				const $slide = $(this);
+				const $text = $slide.find('.volunteer-story');
+				const $toggleBtn = $slide.find('.show-more');
+
+				$toggleBtn.on('click', function () {
+					$text.toggleClass('expanded');
+					const isExpanded = $text.hasClass('expanded');
+					$toggleBtn.text(isExpanded ? 'close' : 'more');
+				});
+			})	
+		// 0630修改 end
+
 		var mySwiper = new Swiper ('.swiper-container-story', {
 			slidesPerView: 1,
       		spaceBetween: 20,

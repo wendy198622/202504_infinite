@@ -154,12 +154,34 @@
 			</iframe>
 		</div>
 	</section>
+	<!-- 0630新增 -->
+	<div class="popup-overlay" id="popupOverlay">
+		<div class="popup-window">
+		  <div class="popup-content">
+			<h4>
+				<span class="material-icons">warning</span>
+				提醒您！請勿相信不明來電緊急通知
+			</h4>
+			<hr>
+			<p>我們不會主動要求您操作網路銀行、ATM或更改捐款金額，若有+886字號開頭可疑電話或遇陌生來電， 請勿理會，也請勿提供對方任何資訊，掛斷電話並撥打165反詐騙專線通報或與本會聯繫求證。</p>
+		  </div>
+		  <button class="popup-close" id="popupClose">關閉視窗</button>
+		</div>
+	  </div>
+	  <!-- 0630新增 end-->
 	
 	<footer id="footer"></footer>
 
 </body>
 <script>
 	$(document).ready(function () {
+		$('#popupOverlay').fadeIn();
+
+		// 0630新增
+		$('#popupClose').on('click', function () {
+			$('#popupOverlay').fadeOut();
+		});
+		// 0630新增 end
 		
 		new WOW().init();
 
