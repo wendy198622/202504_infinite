@@ -1231,6 +1231,7 @@ footer .copyright {
   font-size: 14px;
   text-align: right;
   text-decoration: underline;
+  display: none;
 }
 
 .about_content .content_volunteer .volunteer_story .swiper-pagination-bullet {
@@ -1314,6 +1315,7 @@ footer .copyright {
   font-size: 14px;
   text-align: right;
   text-decoration: underline;
+  display: none;
 }
 
 .about_content .content_entrepreneur .entrepreneur_story .swiper-pagination-bullet {
