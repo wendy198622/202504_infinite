@@ -535,6 +535,211 @@
 
     }
 }
+.CaringVolunteer_content{
+    padding: 80px 0;
+    .container{
+        max-width: 960px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_title{
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 3px;
+        @media (max-width: 600px){
+            font-size: 24px;
+        }
+        img{
+            width: 80px;
+        }
+        h3{
+            margin: 20px auto 40px;
+            text-align: center;
+        }
+    } 
+    .content_form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+
+        .questionnaire-form{
+            width: 100%;
+            background: #f4f5f6;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (max-width: 800px){
+                padding: 40px 20px;
+            }
+          
+            label {
+                display: flex;
+                font-weight: normal;
+                align-items: center;
+                margin-bottom: 5px;
+                letter-spacing: 1px;
+
+                &.w100{
+                    width: 100%;
+                }
+          
+                span {
+                  color: red;
+                }
+                span.note{
+                    display: flex;
+                    font-size: 12px;
+                    // margin-left: 20px;
+                    color: #717171;
+                }
+            }
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"],
+            input[type="line"],
+            input[type="date"],
+            input[type="department"],
+            input[type="position"],
+            input[type="address"],
+            input[type="phone"],
+            input[type="fax"],
+            input[type="invoice"],
+            input[type="taxid"],
+            input[type="job"],
+            input[type="experience"],
+            input[type="expertise"],
+            select,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            
+        
+            input[type="radio"], input[type="checkbox"]{
+                display: inline-block;
+                border: 1px solid #000;
+                padding: 0;
+                width: 18px;
+                height: 18px;
+                margin-right: 8px;
+                &:checked{
+                    background: url(../img/check.svg) center center no-repeat;
+                    background-size: contain;
+                }
+            }
+            textarea {
+                resize: vertical;
+            }
+
+            p.legal{
+                width: calc(100% - 30px);
+                margin-top: 0;
+            }
+
+            ::placeholder{
+                color: #a8a8a8;
+                letter-spacing: 1px;
+                font-weight: 300;
+            }
+            
+            .form-row {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+          
+            .two-cols {
+              display: flex;
+              gap: 20px;
+              @media (max-width: 600px){
+                  flex-direction: column;
+                  align-items: flex-start;
+              }
+            }
+            
+            .two-cols > div {
+              flex: 1;
+              @media (max-width: 600px){
+                  width: 100%;
+              }
+            }
+            
+            .three-cols {
+              display: flex;
+              justify-content: space-between;
+              gap: 20px;
+              @media (max-width: 600px){
+                  flex-wrap: wrap;
+              }
+            }
+            
+            .three-cols > select, .three-cols > div {
+                width: calc((100% - 40px) / 3);
+              @media (max-width: 600px){
+                  width: calc((100% - 20px) / 2);
+              }
+            }
+            
+            .three-cols input {
+              flex: 1;
+            }
+            h4{
+                font-size: 16px;
+                letter-spacing: 2px;
+                margin-bottom: 12px;
+
+                span {
+                    color: red;
+                  }
+            }
+
+            .legal{
+                align-items: center;
+            }
+            .checkbox-group, .radio-group{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+            .GeneralData{
+                // border: 1px solid #ccc;
+                background: #fff;
+                padding: 0px 20px 14px;
+                border-radius: 12px;
+                p{
+                    font-size: 16px;
+                }
+            }
+
+            button{
+                width: 200px;
+                background: $linear-color;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 6px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: opacity 0.3s ease;
+                margin-top: 32px;
+                &:hover {
+                    opacity: 0.85;
+                }
+            }
+        }
+
+    }
+}
 .mt40{
     margin-top: 40px;
 }

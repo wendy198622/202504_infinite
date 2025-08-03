@@ -1831,6 +1831,306 @@ footer .copyright {
   opacity: 0.85;
 }
 
+.CaringVolunteer_content {
+  padding: 80px 0;
+}
+
+.CaringVolunteer_content .container {
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CaringVolunteer_content .content_title {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 600px) {
+  .CaringVolunteer_content .content_title {
+    font-size: 24px;
+  }
+}
+
+.CaringVolunteer_content .content_title img {
+  width: 80px;
+}
+
+.CaringVolunteer_content .content_title h3 {
+  margin: 20px auto 40px;
+  text-align: center;
+}
+
+.CaringVolunteer_content .content_form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form {
+  width: 100%;
+  background: #f4f5f6;
+  padding: 40px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 800px) {
+  .CaringVolunteer_content .content_form .questionnaire-form {
+    padding: 40px 20px;
+  }
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form label.w100 {
+  width: 100%;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form label span {
+  color: red;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form label span.note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #717171;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form input[type="text"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="tel"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="email"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="line"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="date"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="department"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="position"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="address"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="phone"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="fax"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="invoice"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="taxid"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="job"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="experience"],
+.CaringVolunteer_content .content_form .questionnaire-form input[type="expertise"],
+.CaringVolunteer_content .content_form .questionnaire-form select,
+.CaringVolunteer_content .content_form .questionnaire-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form input[type="radio"], .CaringVolunteer_content .content_form .questionnaire-form input[type="checkbox"] {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form input[type="radio"]:checked, .CaringVolunteer_content .content_form .questionnaire-form input[type="checkbox"]:checked {
+  background: url(../img/check.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form textarea {
+  resize: vertical;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form p.legal {
+  width: calc(100% - 30px);
+  margin-top: 0;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form ::-webkit-input-placeholder {
+  color: #a8a8a8;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form :-ms-input-placeholder {
+  color: #a8a8a8;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form ::-ms-input-placeholder {
+  color: #a8a8a8;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form ::placeholder {
+  color: #a8a8a8;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .form-row {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .two-cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .CaringVolunteer_content .content_form .questionnaire-form .two-cols {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .two-cols > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 600px) {
+  .CaringVolunteer_content .content_form .questionnaire-form .two-cols > div {
+    width: 100%;
+  }
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .three-cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .CaringVolunteer_content .content_form .questionnaire-form .three-cols {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .three-cols > select, .CaringVolunteer_content .content_form .questionnaire-form .three-cols > div {
+  width: calc((100% - 40px) / 3);
+}
+
+@media (max-width: 600px) {
+  .CaringVolunteer_content .content_form .questionnaire-form .three-cols > select, .CaringVolunteer_content .content_form .questionnaire-form .three-cols > div {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .three-cols input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form h4 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form h4 span {
+  color: red;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .legal {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .checkbox-group, .CaringVolunteer_content .content_form .questionnaire-form .radio-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .GeneralData {
+  background: #fff;
+  padding: 0px 20px 14px;
+  border-radius: 12px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form .GeneralData p {
+  font-size: 16px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form button {
+  width: 200px;
+  background: linear-gradient(170deg, #E7275A, #F8B01E);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  margin-top: 32px;
+}
+
+.CaringVolunteer_content .content_form .questionnaire-form button:hover {
+  opacity: 0.85;
+}
+
 .mt40 {
   margin-top: 40px;
 }
