@@ -644,6 +644,10 @@
             p.legal{
                 width: calc(100% - 30px);
                 margin-top: 0;
+                a{
+                    display: inline-block;
+                    text-decoration: underline;
+                }
             }
 
             ::placeholder{

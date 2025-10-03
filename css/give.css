@@ -1984,6 +1984,11 @@ footer .copyright {
   margin-top: 0;
 }
 
+.CaringVolunteer_content .content_form .questionnaire-form p.legal a {
+  display: inline-block;
+  text-decoration: underline;
+}
+
 .CaringVolunteer_content .content_form .questionnaire-form ::-webkit-input-placeholder {
   color: #a8a8a8;
   letter-spacing: 1px;

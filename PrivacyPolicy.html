@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>愛無限公益慈善發展協會</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/support.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	
+	<header id="header"></header>
+
+	<section>
+		<div class="donate_content success">
+			<div class="container">
+                <div class="success_form">
+                    <h3>個人資料蒐集、處理及利用告知事項</h3>
+                    <p>為保障您於本站使用服務時之權益，依據《個人資料保護法》第8條規定，特此向您說明本網站「個人資料蒐集、處理及利用」相關事項：</p>
+                    <br>
+                    <h5>壹、蒐集目的與方式</h5>    
+                    <p>本協會蒐集您的個人資料，主要用於會員管理與客戶管理（法定特定目的編號：063、090）。透過您加入會員或使用本站提供之捐款服務時進行資料收集，作為後續管理與服務之依據。</p>        
+                    <br>
+                    <h5>貳、蒐集之資料類別</h5>
+                    <p>C001 辨識個人資料：姓名、地址、電話、電子郵件等基本聯絡資訊<br>
+                            C002 辨識財務資料：信用卡、轉帳帳戶等金融資訊<br>
+                            C003 政府識別資料：身份證字號或護照號碼（如為外籍人士）<br>
+                            C011 個人描述資料：性別、國籍、出生年月日等基本背景資訊</p>     
+                    <br> 
+                    <h5>參、利用期間、地區、對象與方式</h5>
+                    <p>利用期間：自您開始使用服務起，至本協會營運結束為止。<br>
+                            司法院<br>
+                            利用地區：限於中華民國（臺灣）境內使用。<br>
+                            利用對象與方式：本協會內部用於會員及客戶管理、資料查詢等財務資訊將於您進行交易時，提交予相關金融機構進行信用卡授權或轉帳，以完成交易流程</p>     
+                    <br>
+                    <h5>肆、當事人權利</h5>
+                    <p>依《個人資料保護法》第3條規定，您擁有以下權利：
+                            查詢與閱覽本人資料<br>
+                            製給複本補充或更正<br>
+                            請求停止電腦處理及利用<br>
+                            請求刪除資料<br>
+                            如欲行使上述權利，歡迎隨時來電或來信聯絡客服中心，我們將儘速協助處理。</p>     
+                    <br>
+                    <h5>伍、系統安全與責任限制</h5>
+                    <p>本系統會定期備份資料，但除非為故意或重大過失情況，協會對因系統錯誤或備份失敗導致資料遺失，不承擔賠償責任。</p>     
+                    <br>
+                    <h5>陸、使用者自主管理義務</h5>
+                    <p>請您妥善保管帳號、密碼及付款資料（如信用卡資訊），以防止資料外洩。若他人透過您的帳號或密碼進入系統後之行為，將視同您本人所為。</p>     
+                    <br>
+                    <h5>柒、條款修訂與公告方式</h5>
+                    <p>協會保留隨時修訂本告知事項與相關政策之權利。修訂後內容將於網站上公告，恕不另行個別通知；若您繼續使用本站，即視同同意並遵守最新條款。</p> 
+                    <br>
+                    <h5>捌、準據法與管轄法院</h5>
+                    <p>本條款與您所進行之線上捐款服務，均適用中華民國法律。若產生爭議，雙方同意以臺北地方法院為第一審管轄法院。</p> 
+                </div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		
+		new WOW().init();
+
+		$(".imgLiquidFill").imgLiquid({fill:true});
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+			} else {
+				$("#header").removeClass("fixed");
+			}
+		});
+	})
+
+  </script>
+</html>
