@@ -1679,6 +1679,9 @@ footer .copyright {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
 }
 
 .charitypage_top .album-grid img {

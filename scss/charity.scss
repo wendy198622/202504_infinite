@@ -462,6 +462,9 @@
         gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
+        height: 0;
+        padding-bottom: 56.25%;
+        overflow: hidden;
       }
       
       .album-grid img {
